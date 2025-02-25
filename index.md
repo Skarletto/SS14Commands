@@ -11,9 +11,9 @@
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>
     <tr>
-      <th style="padding: 12px 15px; text-align: left; background-color: #24292e; color: white; border-top-left-radius: 6px;">Command</th>
-      <th style="padding: 12px 15px; text-align: left; background-color: #24292e; color: white;">Description</th>
-      <th style="padding: 12px 15px; text-align: left; background-color: #24292e; color: white; border-top-right-radius: 6px;">Syntax</th>
+      <th style="padding: 12px 15px; text-align: left; background-color: #343028; color: white; border-top-left-radius: 6px;">Command</th>
+      <th style="padding: 12px 15px; text-align: left; background-color: #343028; color: white;">Description</th>
+      <th style="padding: 12px 15px; text-align: left; background-color: #343028; color: white; border-top-right-radius: 6px;">Syntax</th>
     </tr>
   </thead>
   <tbody>
@@ -22,7 +22,7 @@
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a description of the following command and its usage.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">help &lt;command&gt;</code></td>
     </tr>
-    <tr style="background-color: #2f2b32;">
+    <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>list</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a list of all commands. Paired with a keyword, returns a list of commands containing that word.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">list &lt;keyword&gt;</code></td>
@@ -32,7 +32,7 @@
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a list of online admins, excluding deadminned admins.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
     </tr>
-    <tr style="background-color: #2f2b32;">
+    <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>aghost</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Turn yourself into an admin ghost, or back again.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
@@ -42,7 +42,7 @@
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Removes all admin functions from the user.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
     </tr>
-    <tr style="background-color: #2f2b32;">
+    <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>readmin</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns all admin functions to the user after they deadmin. Not necessary to run upon joining.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
@@ -52,7 +52,7 @@
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Closes the Game.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
     </tr>
-    <tr style="background-color: #2f2b32;">
+    <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>tpto</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Teleport all targets to the first ID/user in the command.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">tpto Skarlet Chief_Engineer liltenhead 1234567</code><br><br>This will teleport CE, Lilten and entity with ID 1234567 to Skarlet.</td>
@@ -62,7 +62,7 @@
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Teleports yourself to the coordinates on the specified map. Syntax goes X, Y, mapID.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">tp 14 -186 61</code></td>
     </tr>
-    <tr style="background-color: #2f2b32;">
+    <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>customvote</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Creates a custom vote for all players, requires at least two choices. Always do this before running any important events.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">customvote "Do fish fly?" Yes No "Sometimes, I dream about cheese" Maybe</code></td>
@@ -72,33 +72,28 @@
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Delay round start in seconds. Leave blank to pause, use again to unpause.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">delayroundstart 30</code></td>
     </tr>
-    <tr style="background-color: #2f2b32;">
+    <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>votemenu</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Opens the 'Call Vote' menu.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
     </tr>
     <tr style="background-color: #333322;">
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>warp</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Test Warp functionality.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
-    </tr>
-    <tr style="background-color: #2f2b32;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>emergencycall</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Warns the server about a major emergency.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
     </tr>
-    <tr style="background-color: #333322;">
+    <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>setaccess</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Sets user access type. Admins can set themselves to be any user access type.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
     </tr>
-    <tr style="background-color: #2f2b32;">
+    <tr style="background-color: #333322;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>setpassword</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Set a password for access.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
     </tr>
   </tbody>
-</table><br>
+</table>
 
 ### Helpful (Adminning)
 |Command|Description|Syntax|

@@ -8,22 +8,98 @@
 # Classic/VV commands
 ## Simple commands
 ### Helpful (Basics)
-|Command|Description|Syntax|
-|:-:|-|-|
-|help, oldhelp|Returns a description of the following command and it's usage.|`help <command>`|
-|list|Returns a list of all commands. Paired with a keyword, returns a list of commands containing that word.|`list <keyword>`|
-|adminwho|Returns a list of online admins, excluding deadminned admins.||
-|aghost|Turn yourself into an admin ghost, or back again.||
-|deadmin|Removes all admin functions from the user.||
-|readmin|Returns all admin functions to the user after they deadmin. Not necessary to run upon joining.||
-|quit| Closes the Game.
-|tpto|Teleport all targets to the first ID/user in the command.|`tpto Skarlet Chief_Engineer liltenhead 1234567`<br><br>This will teleport CE, Lilten and entity with ID 1234567 to Skarlet.
-|tp|Teleports yourself to the coordinates on the specified map. Syntax goes X, Y, mapID.|`tp 14 -186 61`
-|customvote|Creates a custom vote for all players, requires at least two choices. Always do this before running any important events.|`customvote "Do fish fly?" Yes No "Sometimes, I dream about cheese" Maybe`
-|delayroundstart|Delay round start in seconds. Leave blank to pause, use again to unpause.|`delayroundstart 30`
-|votemenu|Opens the 'Call Vote' menu.|`votemenu`
-|warp|Teleports you to a warp point.|`warp evac`
-|cancelvote|Cancels an ongoing vote. Autocompletes.|`cancelvote 3`
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
+  <thead>
+    <tr>
+      <th style="padding: 12px 15px; text-align: left; background-color: #24292e; color: white; border-top-left-radius: 6px;">Command</th>
+      <th style="padding: 12px 15px; text-align: left; background-color: #24292e; color: white;">Description</th>
+      <th style="padding: 12px 15px; text-align: left; background-color: #24292e; color: white; border-top-right-radius: 6px;">Syntax</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #f6f8fa;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>help, oldhelp</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Returns a description of the following command and its usage.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">help &lt;command&gt;</code></td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>list</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Returns a list of all commands. Paired with a keyword, returns a list of commands containing that word.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">list &lt;keyword&gt;</code></td>
+    </tr>
+    <tr style="background-color: #f6f8fa;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>adminwho</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Returns a list of online admins, excluding deadminned admins.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"></td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>aghost</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Turn yourself into an admin ghost, or back again.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"></td>
+    </tr>
+    <tr style="background-color: #f6f8fa;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>deadmin</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Removes all admin functions from the user.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"></td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>readmin</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Returns all admin functions to the user after they deadmin. Not necessary to run upon joining.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"></td>
+    </tr>
+    <tr style="background-color: #f6f8fa;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>quit</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Closes the Game.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"></td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>tpto</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Teleport all targets to the first ID/user in the command.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">tpto Skarlet Chief_Engineer liltenhead 1234567</code><br><br>This will teleport CE, Lilten and entity with ID 1234567 to Skarlet.</td>
+    </tr>
+    <tr style="background-color: #f6f8fa;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>tp</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Teleports yourself to the coordinates on the specified map. Syntax goes X, Y, mapID.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">tp 14 -186 61</code></td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>customvote</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Creates a custom vote for all players, requires at least two choices. Always do this before running any important events.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">customvote "Do fish fly?" Yes No "Sometimes, I dream about cheese" Maybe</code></td>
+    </tr>
+    <tr style="background-color: #f6f8fa;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>delayroundstart</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Delay round start in seconds. Leave blank to pause, use again to unpause.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">delayroundstart 30</code></td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>votemenu</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Opens the 'Call Vote' menu.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">votemenu</code></td>
+    </tr>
+    <tr style="background-color: #f6f8fa;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>warp</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Teleports you to a warp point.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">warp TestingWarp</code></td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>emergencycall</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Warns the server about a major emergency.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"></td>
+    </tr>
+    <tr style="background-color: #f6f8fa;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>setaccess</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Sets user access type. Admins can set themselves to be any user access type.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"></td>
+    </tr>
+    <tr style="background-color: #ffffff;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"><strong>setpassword</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;">Set a password for access.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #e1e4e8;"></td>
+    </tr>
+  </tbody>
+</table>
+
 
 ### Helpful (Adminning)
 |Command|Description|Syntax|

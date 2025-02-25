@@ -1,5 +1,6 @@
 ---
 ---
+{% include linkrefs.html %}
 
 # SS14 Admin Documentation for commands and general VV stuff
  

@@ -1,13 +1,13 @@
 ---
 tags: game admin, trial admin
 ---
-# WIP Wizden's Admin Documentation for commands and general VV stuff WIP
+# SS14 Admin Documentation for commands and general VV stuff
 
-:::info
-This document aims to bring both common and obscure commands to light for ease of use by the admin team.
+> **Info**  
+> This document aims to bring both common and obscure commands to light for ease of use by the admin team.
 
 Some of the examples used use arbitrary entity IDs as well as usernames for clarity. You should change these to fit your needs.
-:::
+{: .info}
 
 [TOC]
 

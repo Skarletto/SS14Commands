@@ -1,6 +1,6 @@
 ---
 ---
-{% include linkrefs.html %}
+<link rel="stylesheet" href="/style.css">
 
 # SS14 Admin Documentation for commands and general VV stuff
 

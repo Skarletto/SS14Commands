@@ -1,7 +1,7 @@
 ---
 ---
 
-<div style="background-color: #d9edf7; color: #31708f; padding: 10px; border-left: 4px solid #31708f;">
+<div style="background-color: #4e585c; color: #31708f; padding: 10px; border-left: 4px solid #31708f;">
   <strong>Info</strong><br>
   This document aims to bring both common and obscure commands to light for ease of use by the admin team. Some of the examples used use arbitrary entity IDs as well as usernames for clarity. You should change these to fit your needs.
 </div>

@@ -12,18 +12,10 @@ Some of the examples used use arbitrary entity IDs as well as usernames for clar
 {% toc %}
 
 # Classic/VV commands
-:::info
-Throughout this document, command permissions will be tagged with an emoji depending on the permissions needed for it.
-
-Trialmin: :star:
-Propermin: :star2:
-Gamemaster: :sparkles:
-Anything higher than game master: 🌠
-:::
 ## Simple commands
 ### Helpful (Basics)
-|P|Command|Description|Syntax|
-|:-:|-|-|-|
+|Command|Description|Syntax|
+|:-:|-|-|
 ||help, oldhelp|Returns a description of the following command and it's usage.|`help <command>`|
 ||list|Returns a list of all commands. Paired with a keyword, returns a list of commands containing that word.|`list <keyword>`|
 ||adminwho|Returns a list of online admins, excluding deadminned admins.||

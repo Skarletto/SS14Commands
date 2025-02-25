@@ -1,4 +1,5 @@
 theme: jekyll-theme-midnight
 title: SS14 Command Documentation
 description: A guide to SS14 commands
-toc: true
+plugins:
+  - jekyll-toc

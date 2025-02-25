@@ -1,10 +1,8 @@
 ---
 ---
-{% include linkrefs.html %}
-
 # SS14 Admin Documentation for commands and general VV stuff
  
-{{note}} This document aims to bring both common and obscure commands to light for ease of use by the admin team. Some of the examples used use arbitrary entity IDs as well as usernames for clarity. You should change these to fit your needs. {{end}}
+This document aims to bring both common and obscure commands to light for ease of use by the admin team. Some of the examples used use arbitrary entity IDs as well as usernames for clarity. You should change these to fit your needs.
 
 
 # Classic/VV commands

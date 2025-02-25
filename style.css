@@ -1,0 +1,18 @@
+/* Alert Box Styles */
+.info {
+  background-color: #d9edf7;
+  border-left: 5px solid #31708f;
+  padding: 10px;
+}
+
+.warning {
+  background-color: #fcf8e3;
+  border-left: 5px solid #f0ad4e;
+  padding: 10px;
+}
+
+.success {
+  background-color: #dff0d8;
+  border-left: 5px solid #3c763d;
+  padding: 10px;
+}

@@ -2,14 +2,11 @@
 ---
 
 # SS14 Admin Documentation for commands and general VV stuff
-
-> **Info**  
-> This document aims to bring both common and obscure commands to light for ease of use by the admin team.
+ 
+This document aims to bring both common and obscure commands to light for ease of use by the admin team.
 
 Some of the examples used use arbitrary entity IDs as well as usernames for clarity. You should change these to fit your needs.
-{: .info}
 
-{% toc %}
 
 # Classic/VV commands
 ## Simple commands

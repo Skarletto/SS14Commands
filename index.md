@@ -11,9 +11,9 @@
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>
     <tr>
-      <th style="padding: 12px 15px; text-align: left; background-color: #343028; color: white; border-top-left-radius: 6px;">Command</th>
-      <th style="padding: 12px 15px; text-align: left; background-color: #343028; color: white;">Description</th>
-      <th style="padding: 12px 15px; text-align: left; background-color: #343028; color: white; border-top-right-radius: 6px;">Syntax</th>
+      <th style="padding: 12px 15px; text-align: left; background-color: #1a1816; color: white; border-top-left-radius: 6px;">Command</th>
+      <th style="padding: 12px 15px; text-align: left; background-color: #1a1816; color: white;">Description</th>
+      <th style="padding: 12px 15px; text-align: left; background-color: #1a1816; color: white; border-top-right-radius: 6px;">Syntax</th>
     </tr>
   </thead>
   <tbody>

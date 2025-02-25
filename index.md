@@ -2,10 +2,8 @@
 ---
 
 <div style="background-color: #252929; color: #31708f; padding: 10px; border-left: 4px solid #31708f;">
-  <strong>Info</strong><br>
-  This document aims to bring both common and obscure commands to light for ease of use by the admin team. Some of the examples used use arbitrary entity IDs as well as usernames for clarity. You should change these to fit your needs.
-</div>
-
+  This document aims to bring both common and obscure commands to light for ease of use by the admin team. <strong>Some of the examples used use arbitrary entity IDs as well as usernames for clarity.</strong> You should change these to fit your needs.
+</div><br>
 
 # Classic/VV commands
 ## Simple commands

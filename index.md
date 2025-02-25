@@ -16,20 +16,20 @@ Some of the examples used use arbitrary entity IDs as well as usernames for clar
 ### Helpful (Basics)
 |Command|Description|Syntax|
 |:-:|-|-|
-||help, oldhelp|Returns a description of the following command and it's usage.|`help <command>`|
-||list|Returns a list of all commands. Paired with a keyword, returns a list of commands containing that word.|`list <keyword>`|
-||adminwho|Returns a list of online admins, excluding deadminned admins.||
-||aghost|Turn yourself into an admin ghost, or back again.||
-||deadmin|Removes all admin functions from the user.||
-||readmin|Returns all admin functions to the user after they deadmin. Not necessary to run upon joining.||
-||quit| Closes the Game.
-||tpto|Teleport all targets to the first ID/user in the command.|`tpto Skarlet Chief_Engineer liltenhead 1234567`<br><br>This will teleport CE, Lilten and entity with ID 1234567 to Skarlet.
-||tp|Teleports yourself to the coordinates on the specified map. Syntax goes X, Y, mapID.|`tp 14 -186 61`
-||customvote|Creates a custom vote for all players, requires at least two choices. Always do this before running any important events.|`customvote "Do fish fly?" Yes No "Sometimes, I dream about cheese" Maybe`
-||delayroundstart|Delay round start in seconds. Leave blank to pause, use again to unpause.|`delayroundstart 30`
-||votemenu|Opens the 'Call Vote' menu.|`votemenu`
-||warp|Teleports you to a warp point.|`warp evac`
-||cancelvote|Cancels an ongoing vote. Autocompletes.|`cancelvote 3`
+|help, oldhelp|Returns a description of the following command and it's usage.|`help <command>`|
+|list|Returns a list of all commands. Paired with a keyword, returns a list of commands containing that word.|`list <keyword>`|
+|adminwho|Returns a list of online admins, excluding deadminned admins.||
+|aghost|Turn yourself into an admin ghost, or back again.||
+|deadmin|Removes all admin functions from the user.||
+|readmin|Returns all admin functions to the user after they deadmin. Not necessary to run upon joining.||
+|quit| Closes the Game.
+|tpto|Teleport all targets to the first ID/user in the command.|`tpto Skarlet Chief_Engineer liltenhead 1234567`<br><br>This will teleport CE, Lilten and entity with ID 1234567 to Skarlet.
+|tp|Teleports yourself to the coordinates on the specified map. Syntax goes X, Y, mapID.|`tp 14 -186 61`
+|customvote|Creates a custom vote for all players, requires at least two choices. Always do this before running any important events.|`customvote "Do fish fly?" Yes No "Sometimes, I dream about cheese" Maybe`
+|delayroundstart|Delay round start in seconds. Leave blank to pause, use again to unpause.|`delayroundstart 30`
+|votemenu|Opens the 'Call Vote' menu.|`votemenu`
+|warp|Teleports you to a warp point.|`warp evac`
+|cancelvote|Cancels an ongoing vote. Autocompletes.|`cancelvote 3`
 
 ### Helpful (Adminning)
 |P|Command|Description|Syntax|

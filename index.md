@@ -22,17 +22,6 @@
     display: block;
     margin-top: 0;
   }
-    code {
-    background-color: #1e1c1a; /* Darker background for better contrast */
-    color: #e0e0e0; /* Lighter text for readability */
-    border-radius: 3px;
-    padding: 3px 5px;
-    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
-    white-space: pre-wrap; /* Allows wrapping */
-    word-break: break-word; /* Breaks long words */
-    display: inline-block; /* Prevents weird spacing issues */
-    max-width: 100%; /* Ensures it doesn't overflow the table */
-  }
 </style>
 <div class="timestamp">Last updated: February 26, 2025</div>
 
@@ -55,15 +44,13 @@
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>help, oldhelp</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a description of the following command and its usage.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code>help adminwho</code>
-    </tr></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">help &lt;command&gt;</code></td>
+    </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>list</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a list of all commands. Paired with a keyword, returns a list of commands containing that word.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"
-        <code>list admin</code>
-    </tr></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">list &lt;keyword&gt;</code></td>
+    </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>adminwho</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a list of online admins, excluding deadminned admins.</td>
@@ -92,20 +79,17 @@
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>tpto</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Teleport all targets to the first ID/user in the command.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code>tpto Skarlet Chief_Engineer liltenhead 1234567</code>This will teleport CE, Lilten and entity with ID 1234567 to Skarlet.
-    </tr></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">tpto Skarlet Chief_Engineer liltenhead 1234567</code><br><br>This will teleport CE, Lilten and entity with ID 1234567 to Skarlet.</td>
+    </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>tp</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Teleports yourself to the coordinates on the specified map. Syntax goes X, Y, mapID.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code>tp 14 -186 61</code>
-    </tr></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">tp 14 -186 61</code></td>
+    </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>customvote</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Creates a custom vote for all players, requires at least two choices. Always do this before running any important events.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code>customvote "Do fish fly?" Yes No "Sometimes, I dream about cheese" Maybe</code>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">customvote "Do fish fly?" Yes No "Sometimes, I dream about cheese" Maybe</code></td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>delayroundstart</strong></td>
@@ -149,8 +133,9 @@
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>lsobjectives</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Shows all objectives of the targeted user.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code>lsobjectives Skarlet</code>
-    </tr></td>
+        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">lsobjectives Skarlet</code>
+      </td>
+    </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>crewmanifest</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Opens the station's manifest without using a PDA. Autocompletes the station's ID.</td>

@@ -1,5 +1,107 @@
 ---
 ---
+<!-- Search functionality - Add this at the top of your .md file -->
+<style>
+    /* Search styling */
+    #search-container {
+        margin-bottom: 30px;
+    }
+    
+    #search-input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    
+    .highlight {
+        background-color: yellow;
+    }
+    
+    .hidden {
+        display: none;
+    }
+</style>
+
+<div id="search-container">
+    <input type="text" id="search-input" placeholder="Search this page...">
+</div>
+
+<script>
+    // Search functionality
+    document.addEventListener('DOMContentLoaded', function() {
+        const searchInput = document.getElementById('search-input');
+        const contentContainer = document.body;
+        const paragraphs = contentContainer.querySelectorAll('p');
+        const headings = contentContainer.querySelectorAll('h1, h2, h3, h4, h5, h6');
+        
+        searchInput.addEventListener('input', function() {
+            const searchTerm = this.value.toLowerCase().trim();
+            
+            // Reset previous highlights
+            document.querySelectorAll('.highlight').forEach(el => {
+                el.outerHTML = el.innerHTML;
+            });
+            
+            // Show all content sections when search is empty
+            if (searchTerm === '') {
+                paragraphs.forEach(p => p.classList.remove('hidden'));
+                headings.forEach(h => h.classList.remove('hidden'));
+                return;
+            }
+            
+            // Process headings and paragraphs
+            headings.forEach(heading => {
+                const headingText = heading.textContent.toLowerCase();
+                const matches = headingText.includes(searchTerm);
+                
+                if (matches) {
+                    heading.classList.remove('hidden');
+                    highlightText(heading, searchTerm);
+                } else {
+                    heading.classList.add('hidden');
+                }
+            });
+            
+            paragraphs.forEach(paragraph => {
+                const paragraphText = paragraph.textContent.toLowerCase();
+                const matches = paragraphText.includes(searchTerm);
+                
+                if (matches) {
+                    paragraph.classList.remove('hidden');
+                    // Find the closest heading to keep visible
+                    let currentElement = paragraph;
+                    while (currentElement) {
+                        if (currentElement.tagName && currentElement.tagName.match(/^H[1-6]$/)) {
+                            currentElement.classList.remove('hidden');
+                            break;
+                        }
+                        currentElement = currentElement.previousElementSibling;
+                    }
+                    highlightText(paragraph, searchTerm);
+                } else {
+                    paragraph.classList.add('hidden');
+                }
+            });
+        });
+        
+        // Helper function to highlight search terms
+        function highlightText(element, searchTerm) {
+            const innerHTML = element.innerHTML;
+            const index = element.textContent.toLowerCase().indexOf(searchTerm.toLowerCase());
+            if (index >= 0) {
+                const length = searchTerm.length;
+                const textSegment = element.textContent.substring(index, index + length);
+                const newHTML = innerHTML.replace(
+                    new RegExp(textSegment, 'gi'), 
+                    match => `<span class="highlight">${match}</span>`
+                );
+                element.innerHTML = newHTML;
+            }
+        }
+    });
+</script>
 
 <div style="background-color: #252929; color: #31708f; padding: 10px; border-left: 4px solid #31708f;">
   This document aims to bring both common and obscure commands to light for ease of use by the admin team. <strong>Some of the examples used use arbitrary entity IDs as well as usernames for clarity.</strong> You should change these to fit your needs.

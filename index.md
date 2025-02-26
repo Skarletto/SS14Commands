@@ -10,7 +10,7 @@
   }
 </style>
 
-<div style="background-color: #252929; color: #31708f; padding: 10px; border-left: 4px solid #31708f;">
+<div style="background-color: #252929; color: #3588b1; padding: 10px; border-left: 4px solid #3588b1;">
   This document aims to bring both common and obscure commands to light for ease of use by the admin team. <strong>Some of the examples used use arbitrary entity IDs as well as usernames for clarity.</strong> You should change these to fit your needs.
 </div><br>
 <style>
@@ -347,7 +347,7 @@
 <br>
 
 ## Useful Commands
-<div style="background-color: #252929; color: #31708f; padding: 10px; border-left: 4px solid #31708f;">
+<div style="background-color: #252929; color: #3588b1; padding: 10px; border-left: 4px solid #3588b1;">
   All of these are achievable by VVing an entity and clicking the server components instead of writing a command.
 </div><br>
 aGhost privacy strings
@@ -430,7 +430,7 @@ Toolshed is the newer alternative of BQL and was developed by Moony.
 
 Toolshed commands must start with a `>` to work properly. The official (unfinished) toolshed documentation can be found [here](https://docs.spacestation14.com/en/robust-toolbox/toolshed.html?highlight=toolshed#toolshed), but it is not necessary to read, nor to learn. Most toolshed commands have autocomplete.
 ## The Basics
-<div style="background-color: #2b2020; color: #8f3131; padding: 10px; border-left: 4px solid #8f3131;">
+<div style="background-color: #2b2020; color: #ba3b3b; padding: 10px; border-left: 4px solid #ba3b3b;">
   Be extremely careful when using `entities` based Toolshed commands. It is *very* easy to kill the server or end a round. If you are unsure what the command will fully do, test run it in a dev environment or empty server.
 </div><br>
 

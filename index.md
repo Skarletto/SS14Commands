@@ -20,7 +20,7 @@
     font-style: italic;
     text-align: right;
     display: block;
-    margin-top: -4;
+    margin-top: -10;
   }
 </style>
 <div class="timestamp">Last updated: February 26, 2025</div>

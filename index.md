@@ -1,61 +1,53 @@
 ---
 ---
 <style>
-  .collapsible {
-    background-color: #f1f1f1;
-    cursor: pointer;
-    padding: 12px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-    border-radius: 4px;
-    margin: 5px 0;
+  .code-block {
     position: relative;
+    background-color: #f5f5f5;
+    padding: 16px;
+    border-radius: 4px;
+    margin: 10px 0;
   }
   
-  .active, .collapsible:hover {
-    background-color: #e7e7e7;
+  .copy-btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #f1f1f1;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.2s;
   }
   
-  .collapsible:after {
-    content: '+';
-    font-weight: bold;
-    float: right;
+  .code-block:hover .copy-btn {
+    opacity: 1;
   }
   
-  .active:after {
-    content: '-';
-  }
-  
-  .content {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #fafafa;
-    border-radius: 0 0 4px 4px;
+  .copy-btn:hover {
+    background-color: #e1e1e1;
   }
 </style>
 
-<button class="collapsible">File Operations Commands</button>
-<div class="content">
-  <p>Commands related to file operations go here...</p>
+<div class="code-block">
+  <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+  <code>git commit -m "Initial commit"</code>
 </div>
 
 <script>
-  var coll = document.getElementsByClassName("collapsible");
-  for (var i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
+  function copyCode(btn) {
+    const codeBlock = btn.parentElement;
+    const code = codeBlock.querySelector('code').innerText;
+    
+    navigator.clipboard.writeText(code).then(() => {
+      const originalText = btn.innerText;
+      btn.innerText = "Copied!";
+      setTimeout(() => {
+        btn.innerText = originalText;
+      }, 1500);
     });
   }
 </script>

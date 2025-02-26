@@ -1,19 +1,19 @@
 ---
 ---
-<style>
-  .timestamp {
-    font-size: 12px;
-    color: #6c757d;
-    margin-top: 5px;
-    font-style: italic;
-  }
-</style>
-  <div class="timestamp">Last updated: February 26, 2025</div>
-</div>
 
 <div style="background-color: #252929; color: #31708f; padding: 10px; border-left: 4px solid #31708f;">
   This document aims to bring both common and obscure commands to light for ease of use by the admin team. <strong>Some of the examples used use arbitrary entity IDs as well as usernames for clarity.</strong> You should change these to fit your needs.
 </div><br>
+<style>
+  .timestamp {
+    font-size: 12px;
+    color: #6c757d;
+    font-style: italic;
+    text-align: right;
+    display: block;
+  }
+</style>
+<div class="timestamp">Last updated: February 26, 2025</div>
 
 ## Table of Contents
 * TOC

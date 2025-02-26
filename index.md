@@ -1,56 +1,48 @@
 ---
 ---
 <style>
-  .code-block {
-    position: relative;
-    background-color: #f5f5f5;
-    padding: 16px;
+  .related-commands {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f5f7f9;
     border-radius: 4px;
-    margin: 10px 0;
+    border-left: 3px solid #007bff;
   }
   
-  .copy-btn {
-    position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: #f1f1f1;
-    border: none;
+  .related-commands h4 {
+    margin-top: 0;
+    color: #333;
+  }
+  
+  .related-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .related-link {
+    padding: 5px 8px;
+    background-color: #e9ecef;
     border-radius: 4px;
-    padding: 4px 8px;
-    font-size: 12px;
-    cursor: pointer;
-    opacity: 0.7;
-    transition: opacity 0.2s;
+    text-decoration: none;
+    color: #495057;
+    font-size: 14px;
+    transition: background-color 0.2s;
   }
   
-  .code-block:hover .copy-btn {
-    opacity: 1;
-  }
-  
-  .copy-btn:hover {
-    background-color: #e1e1e1;
+  .related-link:hover {
+    background-color: #dee2e6;
   }
 </style>
 
-<div class="code-block">
-  <button class="copy-btn" onclick="copyCode(this)">Copy</button>
-  <code>git commit -m "Initial commit"</code>
+<div class="related-commands">
+  <h4>Related Commands</h4>
+  <div class="related-links">
+    <a href="#git-pull" class="related-link">git pull</a>
+    <a href="#git-fetch" class="related-link">git fetch</a>
+    <a href="#git-merge" class="related-link">git merge</a>
+  </div>
 </div>
-
-<script>
-  function copyCode(btn) {
-    const codeBlock = btn.parentElement;
-    const code = codeBlock.querySelector('code').innerText;
-    
-    navigator.clipboard.writeText(code).then(() => {
-      const originalText = btn.innerText;
-      btn.innerText = "Copied!";
-      setTimeout(() => {
-        btn.innerText = originalText;
-      }, 1500);
-    });
-  }
-</script>
 
 <div style="background-color: #252929; color: #31708f; padding: 10px; border-left: 4px solid #31708f;">
   This document aims to bring both common and obscure commands to light for ease of use by the admin team. <strong>Some of the examples used use arbitrary entity IDs as well as usernames for clarity.</strong> You should change these to fit your needs.

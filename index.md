@@ -1,135 +1,63 @@
 ---
 ---
-<!-- Search functionality - Add this at the top of your .md file -->
-<!-- Enhanced Search functionality -->
 <style>
-    /* Search styling */
-    #search-container {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 100;
-        width: 250px;
-    }
-    
-    #search-input {
-        width: 100%;
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-        background-color: rgba(255,255,255,0.95);
-    }
-    
-    .highlight {
-        background-color: yellow;
-    }
-    
-    .dimmed {
-        opacity: 0.3;
-        transition: opacity 0.3s ease;
-    }
-    
-    body.searching .dimmed {
-        opacity: 0.3;
-    }
-    
-    body.searching .highlight {
-        opacity: 1;
-    }
-    
-    /* Make sure highlighted elements and their parents are fully visible */
-    body.searching .highlight,
-    body.searching .highlight * {
-        opacity: 1 !important;
-    }
-    
-    /* Make elements containing highlights fully visible */
-    body.searching *:has(.highlight) {
-        opacity: 1 !important;
-    }
+  .collapsible {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    border-radius: 4px;
+    margin: 5px 0;
+    position: relative;
+  }
+  
+  .active, .collapsible:hover {
+    background-color: #e7e7e7;
+  }
+  
+  .collapsible:after {
+    content: '+';
+    font-weight: bold;
+    float: right;
+  }
+  
+  .active:after {
+    content: '-';
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #fafafa;
+    border-radius: 0 0 4px 4px;
+  }
 </style>
 
-<div id="search-container">
-    <input type="text" id="search-input" placeholder="Search this page...">
+<button class="collapsible">File Operations Commands</button>
+<div class="content">
+  <p>Commands related to file operations go here...</p>
 </div>
 
 <script>
-    // Enhanced search functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        const searchInput = document.getElementById('search-input');
-        const contentContainer = document.body;
-        const paragraphs = contentContainer.querySelectorAll('p');
-        const headings = contentContainer.querySelectorAll('h1, h2, h3, h4, h5, h6');
-        const allElements = [...paragraphs, ...headings];
-        
-        searchInput.addEventListener('input', function() {
-            const searchTerm = this.value.toLowerCase().trim();
-            
-            // Reset previous highlights and dimming
-            document.querySelectorAll('.highlight').forEach(el => {
-                el.outerHTML = el.innerHTML;
-            });
-            
-            document.querySelectorAll('.dimmed').forEach(el => {
-                el.classList.remove('dimmed');
-            });
-            
-            // Toggle the searching class on body
-            if (searchTerm === '') {
-                document.body.classList.remove('searching');
-                return;
-            } else {
-                document.body.classList.add('searching');
-            }
-            
-            // Track elements with matches
-            const matchedElements = new Set();
-            
-            // Process all text elements
-            allElements.forEach(element => {
-                const elementText = element.textContent.toLowerCase();
-                const matches = elementText.includes(searchTerm);
-                
-                if (matches) {
-                    matchedElements.add(element);
-                    highlightText(element, searchTerm);
-                    
-                    // Also add parent headers for context
-                    let current = element;
-                    while (current) {
-                        if (current.tagName && current.tagName.match(/^H[1-6]$/)) {
-                            matchedElements.add(current);
-                        }
-                        current = current.previousElementSibling;
-                    }
-                } else {
-                    element.classList.add('dimmed');
-                }
-            });
-            
-            // Make sure matched elements are not dimmed
-            matchedElements.forEach(el => {
-                el.classList.remove('dimmed');
-            });
-        });
-        
-        // Helper function to highlight search terms
-        function highlightText(element, searchTerm) {
-            const innerHTML = element.innerHTML;
-            const index = element.textContent.toLowerCase().indexOf(searchTerm.toLowerCase());
-            if (index >= 0) {
-                const length = searchTerm.length;
-                const textSegment = element.textContent.substring(index, index + length);
-                const newHTML = innerHTML.replace(
-                    new RegExp(textSegment, 'gi'), 
-                    match => `<span class="highlight">${match}</span>`
-                );
-                element.innerHTML = newHTML;
-            }
-        }
+  var coll = document.getElementsByClassName("collapsible");
+  for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
     });
+  }
 </script>
 
 <div style="background-color: #252929; color: #31708f; padding: 10px; border-left: 4px solid #31708f;">

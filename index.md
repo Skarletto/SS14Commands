@@ -1,5 +1,14 @@
 ---
 ---
+<style>
+  code {
+    background-color: #1e1c1a; /* Darker background */
+    color: #e0e0e0; /* Lighter text */
+    border-radius: 3px;
+    padding: 3px 5px;
+    font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  }
+</style>
 
 <div style="background-color: #252929; color: #31708f; padding: 10px; border-left: 4px solid #31708f;">
   This document aims to bring both common and obscure commands to light for ease of use by the admin team. <strong>Some of the examples used use arbitrary entity IDs as well as usernames for clarity.</strong> You should change these to fit your needs.

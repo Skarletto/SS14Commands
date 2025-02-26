@@ -1,47 +1,18 @@
 ---
 ---
 <style>
-  .related-commands {
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #f5f7f9;
-    border-radius: 4px;
-    border-left: 3px solid #007bff;
-  }
-  
-  .related-commands h4 {
-    margin-top: 0;
-    color: #333;
-  }
-  
-  .related-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-  }
-  
-  .related-link {
-    padding: 5px 8px;
-    background-color: #e9ecef;
-    border-radius: 4px;
-    text-decoration: none;
-    color: #495057;
-    font-size: 14px;
-    transition: background-color 0.2s;
-  }
-  
-  .related-link:hover {
-    background-color: #dee2e6;
+  .timestamp {
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: 5px;
+    font-style: italic;
   }
 </style>
 
-<div class="related-commands">
-  <h4>Related Commands</h4>
-  <div class="related-links">
-    <a href="#git-pull" class="related-link">git pull</a>
-    <a href="#git-fetch" class="related-link">git fetch</a>
-    <a href="#git-merge" class="related-link">git merge</a>
-  </div>
+<div class="command-section">
+  <h2>git rebase</h2>
+  <div class="timestamp">Last updated: February 26, 2025</div>
+  <!-- Command documentation here -->
 </div>
 
 <div style="background-color: #252929; color: #31708f; padding: 10px; border-left: 4px solid #31708f;">

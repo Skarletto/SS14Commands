@@ -1,10 +1,15 @@
 ---
 ---
 <!-- Search functionality - Add this at the top of your .md file -->
+<!-- Enhanced Search functionality -->
 <style>
     /* Search styling */
     #search-container {
-        margin-bottom: 30px;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 100;
+        width: 250px;
     }
     
     #search-input {
@@ -13,14 +18,36 @@
         font-size: 16px;
         border: 1px solid #ddd;
         border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        background-color: rgba(255,255,255,0.95);
     }
     
     .highlight {
         background-color: yellow;
     }
     
-    .hidden {
-        display: none;
+    .dimmed {
+        opacity: 0.3;
+        transition: opacity 0.3s ease;
+    }
+    
+    body.searching .dimmed {
+        opacity: 0.3;
+    }
+    
+    body.searching .highlight {
+        opacity: 1;
+    }
+    
+    /* Make sure highlighted elements and their parents are fully visible */
+    body.searching .highlight,
+    body.searching .highlight * {
+        opacity: 1 !important;
+    }
+    
+    /* Make elements containing highlights fully visible */
+    body.searching *:has(.highlight) {
+        opacity: 1 !important;
     }
 </style>
 
@@ -29,60 +56,62 @@
 </div>
 
 <script>
-    // Search functionality
+    // Enhanced search functionality
     document.addEventListener('DOMContentLoaded', function() {
         const searchInput = document.getElementById('search-input');
         const contentContainer = document.body;
         const paragraphs = contentContainer.querySelectorAll('p');
         const headings = contentContainer.querySelectorAll('h1, h2, h3, h4, h5, h6');
+        const allElements = [...paragraphs, ...headings];
         
         searchInput.addEventListener('input', function() {
             const searchTerm = this.value.toLowerCase().trim();
             
-            // Reset previous highlights
+            // Reset previous highlights and dimming
             document.querySelectorAll('.highlight').forEach(el => {
                 el.outerHTML = el.innerHTML;
             });
             
-            // Show all content sections when search is empty
+            document.querySelectorAll('.dimmed').forEach(el => {
+                el.classList.remove('dimmed');
+            });
+            
+            // Toggle the searching class on body
             if (searchTerm === '') {
-                paragraphs.forEach(p => p.classList.remove('hidden'));
-                headings.forEach(h => h.classList.remove('hidden'));
+                document.body.classList.remove('searching');
                 return;
+            } else {
+                document.body.classList.add('searching');
             }
             
-            // Process headings and paragraphs
-            headings.forEach(heading => {
-                const headingText = heading.textContent.toLowerCase();
-                const matches = headingText.includes(searchTerm);
+            // Track elements with matches
+            const matchedElements = new Set();
+            
+            // Process all text elements
+            allElements.forEach(element => {
+                const elementText = element.textContent.toLowerCase();
+                const matches = elementText.includes(searchTerm);
                 
                 if (matches) {
-                    heading.classList.remove('hidden');
-                    highlightText(heading, searchTerm);
+                    matchedElements.add(element);
+                    highlightText(element, searchTerm);
+                    
+                    // Also add parent headers for context
+                    let current = element;
+                    while (current) {
+                        if (current.tagName && current.tagName.match(/^H[1-6]$/)) {
+                            matchedElements.add(current);
+                        }
+                        current = current.previousElementSibling;
+                    }
                 } else {
-                    heading.classList.add('hidden');
+                    element.classList.add('dimmed');
                 }
             });
             
-            paragraphs.forEach(paragraph => {
-                const paragraphText = paragraph.textContent.toLowerCase();
-                const matches = paragraphText.includes(searchTerm);
-                
-                if (matches) {
-                    paragraph.classList.remove('hidden');
-                    // Find the closest heading to keep visible
-                    let currentElement = paragraph;
-                    while (currentElement) {
-                        if (currentElement.tagName && currentElement.tagName.match(/^H[1-6]$/)) {
-                            currentElement.classList.remove('hidden');
-                            break;
-                        }
-                        currentElement = currentElement.previousElementSibling;
-                    }
-                    highlightText(paragraph, searchTerm);
-                } else {
-                    paragraph.classList.add('hidden');
-                }
+            // Make sure matched elements are not dimmed
+            matchedElements.forEach(el => {
+                el.classList.remove('dimmed');
             });
         });
         

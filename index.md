@@ -408,17 +408,14 @@ Borg Laws
 Uploading a prototype with `uploadfile` WIP
 :    Uploading singular files is very straightforward, but if you are uploading multiple files for, example, a prototype, it can become quite tiresome. Here is an example to show exactly how to use this command to upload a prototype.
 
-       In this example, I will upload a custom neck item that displays stars on top of the character wearing it.
-       First, we need the code. Yml is thankfully not very hard to work with- Every prototype upload can basically be copied off from an existing prototype and frankensteined into whatever you want it to be.
-       So here:
+        In this example, I will upload a custom neck item that displays stars on top of the character wearing it.
+        First, we need the code. Yml is thankfully not very hard to work with- Every prototype upload can basically be copied off from an existing prototype and frankensteined into whatever you want it to be.
+        So here:
 
         uploadfile Skarlet/pretzels.ogg
-    Then all you need to do is run playglobalsound the way I formatted
+        Then all you need to do is run playglobalsound the way I formatted
 
 # VV/Components Documentation
-:::info
-A lot of components have had their values unlocked to admins, so a lot of customization is possible now.
-:::
 ```
  stationID, then open StationBankAccountComponent
 ```
@@ -433,25 +430,81 @@ Toolshed is the newer alternative of BQL and was developed by Moony.
 
 Toolshed commands must start with a `>` to work properly. The official (unfinished) toolshed documentation can be found [here](https://docs.spacestation14.com/en/robust-toolbox/toolshed.html?highlight=toolshed#toolshed), but it is not necessary to read, nor to learn. Most toolshed commands have autocomplete.
 ## The Basics
-:::danger
-Be extremely careful when using `entities` based Toolshed commands. It is *very* easy to kill the server or end a round. If you are unsure what the command will fully do please test run it in a dev environment or empty server.
-:::
+<div style="background-color: #2b2020; color: #8f3131; padding: 10px; border-left: 4px solid #8f3131;">
+  Be extremely careful when using `entities` based Toolshed commands. It is *very* easy to kill the server or end a round. If you are unsure what the command will fully do, test run it in a dev environment or empty server.
+</div><br>
 
-|Command|Description|
-|:-:|-|
-|explain|You can add this in front of a command/string to show you exactly what they do and how to use them.|
-|entities|Returns a list of all entities. Must be used with a filter (`with` or `prototyped`) to be effective.|
-|select|Takes N number of of the input list. Accepts %.|
-|take|Take a N items off the top of the list.|
-|pick|Takes a single random item from the list.
-|with|Lists entities with the specified prototype.|
-|join|Joins a list with another list. (e.g. entities1 join {entities2})|
-|nearby|Takes the entity listed before it then gets entities within N tiles. (e.g. `self nearby 3`)|
-|prototyped|Lists entities that are a specific prototype. (e.g. `prototyped PoweredLight`)|
-|actor:controlled|Lists entities that are actively being controlled (i.e. active players).|
-|self|Returns the EID of yourself.|
-|do|Runs normal commands for each entity in the list provided. Must be used at end of Toolshed string. All commands must be wrapped in quotations and inner quotes must be escaped (e.g `do "thing $ID \"stuff\""`).|
-
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
+  <thead>
+    <tr>
+      <th style="padding: 12px 15px; text-align: left; background-color: #1e1c1a; color: white; border-top-left-radius: 6px;">Command</th>
+      <th style="padding: 12px 15px; text-align: left; background-color: #1e1c1a; color: white;">Description</th>
+      <th style="padding: 12px 15px; text-align: left; background-color: #1e1c1a; color: white; border-top-right-radius: 6px;">Syntax</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>explain</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">You can add this in front of a command/string to show you exactly what they do and how to use them.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+    </tr>
+    <tr style="background-color: #2b2721;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>entities</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a list of all entities. Must be used with a filter (`with` or `prototyped`) to be effective.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+    </tr>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>select</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Takes N number of the input list. Accepts %.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+    </tr>
+    <tr style="background-color: #2b2721;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>take</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Take N items off the top of the list.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+    </tr>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>pick</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Takes a single random item from the list.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+    </tr>
+    <tr style="background-color: #2b2721;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>with</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Lists entities with the specified prototype.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+    </tr>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>join</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Joins a list with another list. (e.g. entities1 join {entities2})</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+    </tr>
+    <tr style="background-color: #2b2721;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>nearby</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Takes the entity listed before it then gets entities within N tiles. (e.g. `self nearby 3`)</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+    </tr>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>prototyped</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Lists entities that are a specific prototype. (e.g. `prototyped PoweredLight`)</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+    </tr>
+    <tr style="background-color: #2b2721;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>actor:controlled</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Lists entities that are actively being controlled (i.e. active players).</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+    </tr>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>self</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns the EID of yourself.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+    </tr>
+    <tr style="background-color: #2b2721;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>do</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Runs normal commands for each entity in the list provided. Must be used at end of Toolshed string. All commands must be wrapped in quotations and inner quotes must be escaped (e.g `do "thing $ID \"stuff\"`).</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+    </tr>
+  </tbody>
+</table>
 
 ## String examples
 
@@ -472,18 +525,7 @@ Lets you find out what the station's entity ID is.
 ## Useful Toolshed Commands
 Delete all space garbage: `> entities with SpaceGarbage delete`
 
-# Code wishlist
-:::warning
-Feel free to add commands to this wishlist to make buttons or verbs out of them; This would be useful for common usage commands.
-:::
-
-- Verb for player objectives
-
 # Fun
-:::info
-Almost all of these are going to be Game Master level Toolshed commands because that's the best way to cause chaos.
-:::
-
 
 Turn all MobGlockroach into ghost roles with custom text: `> entities prototyped MobGlockroach do "makeghostrole $ID GLOCKROACH \"ARRGGHHH\" \"BANG BANG POW\""`
 

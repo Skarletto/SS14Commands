@@ -408,70 +408,9 @@ Borg Laws
 Uploading a prototype with `uploadfile` WIP
 :    Uploading singular files is very straightforward, but if you are uploading multiple files for, example, a prototype, it can become quite tiresome. Here is an example to show exactly how to use this command to upload a prototype.
 
-
-     In this example, I will upload a custom neck item that displays stars on top of the character wearing it.
-     First, we need the code. Yml is thankfully not very hard to work with- Every prototype upload can basically be copied off from an existing prototype and frankensteined into whatever you want it to be.
-     So here:
-     
-<style>
-  .collapsible {
-    background-color: #1e1c1a;
-    cursor: pointer;
-    padding: 12px;
-    width: 100%;
-    border: none;
-    text-align: left;
-    outline: none;
-    font-size: 15px;
-    transition: 0.4s;
-    border-radius: 4px;
-    margin: 5px 0;
-    position: relative;
-  }
-  
-  .active, .collapsible:hover {
-    background-color: #2b2721;
-  }
-  
-  .collapsible:after {
-    content: '+';
-    font-weight: bold;
-    float: right;
-  }
-  
-  .active:after {
-    content: '-';
-  }
-  
-  .content {
-    padding: 0 18px;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.2s ease-out;
-    background-color: #2b2721;
-    border-radius: 0 0 4px 4px;
-  }
-</style>
-
-<button class="collapsible">File Operations Commands</button>
-<div class="content">
-  <p>Commands related to file operations go here...</p>
-</div>
-
-<script>
-  var coll = document.getElementsByClassName("collapsible");
-  for (var i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function() {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.maxHeight) {
-        content.style.maxHeight = null;
-      } else {
-        content.style.maxHeight = content.scrollHeight + "px";
-      }
-    });
-  }
-</script>
+       In this example, I will upload a custom neck item that displays stars on top of the character wearing it.
+       First, we need the code. Yml is thankfully not very hard to work with- Every prototype upload can basically be copied off from an existing prototype and frankensteined into whatever you want it to be.
+       So here:
 
         uploadfile Skarlet/pretzels.ogg
     Then all you need to do is run playglobalsound the way I formatted

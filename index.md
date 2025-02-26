@@ -123,7 +123,7 @@
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>lsobjectives</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Shows all objectives of the targeted user.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">lsobjectives Skarlet</code>
+        <code>lsobjectives Skarlet</code>
       </td>
     </tr>
     <tr style="background-color: #2b2721;">
@@ -178,6 +178,7 @@
   </tbody>
 </table>
 
+
 ### Debug
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>
@@ -192,47 +193,46 @@
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>vv</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Opens graphical VV editor for given entity. Can help with accessing something you can't right-click, including server-only entities.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">vv 12345678</code>
+        <code>vv 12345678</code>
       </td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>vvwrite</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Used to change a component's values.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">vvwrite 12345678 ComponentName Value</code>
+        <code>vvwrite 12345678 ComponentName Value</code>
       </td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>vvread</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Used to read a component's values. Used like vvwrite.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">vvread 12345678 ComponentName</code>
+        <code>vvread 12345678 ComponentName</code>
       </td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>addcomp</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Adds a component to an entity.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">addcomp 1234567 Jittering</code>
+        <code>addcomp 1234567 Jittering</code>
       </td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>fixgridatmos</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Resets the grid's atmos. This WILL reset pipe contents as well.<br><br>Be careful about running this on the main station, as this may also reset anything crew (e.g. atmos techs) did intentionally, like frezon production setups.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">fixgridatmos 1234567</code>
+        <code>fixgridatmos 1234567</code>
       </td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>showradiation</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Displays a radiation source's range, the entities it hits, and the radiation protection of entities.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">showradiation</code>
+        <code>showradiation</code>
       </td>
     </tr>
   </tbody>
 </table>
-
 
 ### Admin Abuse
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">

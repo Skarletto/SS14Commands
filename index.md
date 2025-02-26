@@ -8,11 +8,7 @@
     font-style: italic;
   }
 </style>
-
-<div class="command-section">
-  <h2>git rebase</h2>
   <div class="timestamp">Last updated: February 26, 2025</div>
-  <!-- Command documentation here -->
 </div>
 
 <div style="background-color: #252929; color: #31708f; padding: 10px; border-left: 4px solid #31708f;">

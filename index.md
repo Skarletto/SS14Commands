@@ -20,7 +20,7 @@
     font-style: italic;
     text-align: right;
     display: block;
-    margin-top: 0;
+    margin-top: -4;
   }
 </style>
 <div class="timestamp">Last updated: February 26, 2025</div>
@@ -273,9 +273,9 @@
   <tbody>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>setadminooc</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Changes color of your OOC messages. Persists between reconnects and servers, will not apply while <code>deadmin</code>ned.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Changes color of your OOC messages. Persists between reconnects and servers, will not apply while <code>deadmin</code></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">setadminooc #ff7777</code>
+        <code>setadminooc #ff7777</code>
       </td>
     </tr>
     <tr style="background-color: #2b2721;">
@@ -344,11 +344,12 @@
   </tbody>
 </table>
 
+<br>
 
 ## Useful Commands
-:::info
-All of these are achievable by VVing an entity and clicking the server components instead of writing a command.
-:::
+<div style="background-color: #252929; color: #31708f; padding: 10px; border-left: 4px solid #31708f;">
+  All of these are achievable by VVing an entity and clicking the server components instead of writing a command.
+</div><br>
 aGhost privacy strings
 
 :   Change your ghost's layer with:
@@ -368,20 +369,121 @@ Borg Laws
     
         player:entity "nikthechampiongr" laws:get
 
+<br>
 
-
-## Upload tutorial and commands (Game Master)
-
-|Command|Description|Syntax|
-|:-:|-|-|
-|uploadfile|Used to upload singular files. Works anywhere on your PC.|`uploadfile Skarlet/pretzels.ogg`
-|uploadfolder|Used to upload a folder. The folder's name has to be one word or it won't work. [NEEDS DOCUMENTATION]|
-|loadprototype|Uploads a YML and runs it. Make sure you have the right material in the YML before uploading.|`loadprototype`
+## Upload tutorial and commands
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
+  <thead>
+    <tr>
+      <th style="padding: 12px 15px; text-align: left; background-color: #1e1c1a; color: white; border-top-left-radius: 6px;">Command</th>
+      <th style="padding: 12px 15px; text-align: left; background-color: #1e1c1a; color: white;">Description</th>
+      <th style="padding: 12px 15px; text-align: left; background-color: #1e1c1a; color: white; border-top-right-radius: 6px;">Syntax</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>uploadfile</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Used to upload singular files. Works anywhere on your PC.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>uploadfile Skarlet/pretzels.ogg</code>
+      </td>
+    </tr>
+    <tr style="background-color: #2b2721;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>uploadfolder</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Used to upload a folder. The folder's name has to be one word or it won't work. [NEED ASSISTANCE]</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>scale 1234567 0.5</code>
+      </td>
+    </tr>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>loadprototype</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Uploads a YML and runs it. Make sure you have the right material in the YML before uploading.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>loadprototype</code>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 Uploading a prototype with `uploadfile` WIP
 :    Uploading singular files is very straightforward, but if you are uploading multiple files for, example, a prototype, it can become quite tiresome. Here is an example to show exactly how to use this command to upload a prototype.
 
-    In this example, I will upload a set of pajamas:
+     In this example, I will upload a custom neck item that displays stars on top of the character wearing it.
+     First, we need the code. Yml is thankfully not very hard to work with- Every prototype upload can basically be copied off from an existing prototype and frankensteined into whatever you want it to be.
+     So here:
+     
+<style>
+  .example-container {
+    margin: 15px 0;
+  }
+  
+  .example-toggle {
+    display: flex;
+    border-radius: 4px;
+    overflow: hidden;
+    width: fit-content;
+    margin-bottom: 10px;
+  }
+  
+  .toggle-btn {
+    background-color: #f1f1f1;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .toggle-btn.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .example-content {
+    display: none;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+  }
+  
+  .example-content.active {
+    display: block;
+  }
+</style>
+
+<div class="example-container">
+  <div class="example-toggle">
+    <button class="toggle-btn active" onclick="toggleExample(this, 'basic')">Basic</button>
+    <button class="toggle-btn" onclick="toggleExample(this, 'advanced')">Advanced</button>
+  </div>
+  
+  <div id="basic" class="example-content active">
+    <p>Basic command: <code>git push</code></p>
+  </div>
+  
+  <div id="advanced" class="example-content">
+    <p>Advanced command: <code>git push --force-with-lease origin main</code></p>
+  </div>
+</div>
+
+<script>
+  function toggleExample(btn, type) {
+    // Deactivate all buttons in this toggle group
+    const toggleContainer = btn.parentElement;
+    const buttons = toggleContainer.querySelectorAll('.toggle-btn');
+    buttons.forEach(b => b.classList.remove('active'));
+    
+    // Activate clicked button
+    btn.classList.add('active');
+    
+    // Hide all content containers
+    const exampleContainer = toggleContainer.parentElement;
+    const contents = exampleContainer.querySelectorAll('.example-content');
+    contents.forEach(c => c.classList.remove('active'));
+    
+    // Show selected content
+    document.getElementById(type).classList.add('active');
+  }
+</script>
 
         uploadfile Skarlet/pretzels.ogg
     Then all you need to do is run playglobalsound the way I formatted

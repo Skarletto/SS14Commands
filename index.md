@@ -445,7 +445,7 @@ Toolshed commands must start with a `>` to work properly. The official (unfinish
   <tbody>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>explain</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">You can add this in front of a command/string to show you exactly what they do and how to use them.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">pair with a string to show you exactly what they do and how to use them.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
     </tr>
     <tr style="background-color: #2b2721;">

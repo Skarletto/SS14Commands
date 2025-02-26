@@ -408,80 +408,68 @@ Borg Laws
 Uploading a prototype with `uploadfile` WIP
 :    Uploading singular files is very straightforward, but if you are uploading multiple files for, example, a prototype, it can become quite tiresome. Here is an example to show exactly how to use this command to upload a prototype.
 
+
      In this example, I will upload a custom neck item that displays stars on top of the character wearing it.
      First, we need the code. Yml is thankfully not very hard to work with- Every prototype upload can basically be copied off from an existing prototype and frankensteined into whatever you want it to be.
      So here:
      
 <style>
-  .example-container {
-    margin: 15px 0;
-  }
-  
-  .example-toggle {
-    display: flex;
-    border-radius: 4px;
-    overflow: hidden;
-    width: fit-content;
-    margin-bottom: 10px;
-  }
-  
-  .toggle-btn {
-    background-color: #f1f1f1;
-    border: none;
-    padding: 8px 16px;
+  .collapsible {
+    background-color: #1e1c1a;
     cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .toggle-btn.active {
-    background-color: #007bff;
-    color: white;
-  }
-  
-  .example-content {
-    display: none;
-    padding: 10px;
-    background-color: #f9f9f9;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
     border-radius: 4px;
+    margin: 5px 0;
+    position: relative;
   }
   
-  .example-content.active {
-    display: block;
+  .active, .collapsible:hover {
+    background-color: #2b2721;
+  }
+  
+  .collapsible:after {
+    content: '+';
+    font-weight: bold;
+    float: right;
+  }
+  
+  .active:after {
+    content: '-';
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #2b2721;
+    border-radius: 0 0 4px 4px;
   }
 </style>
 
-<div class="example-container">
-  <div class="example-toggle">
-    <button class="toggle-btn active" onclick="toggleExample(this, 'basic')">Basic</button>
-    <button class="toggle-btn" onclick="toggleExample(this, 'advanced')">Advanced</button>
-  </div>
-  
-  <div id="basic" class="example-content active">
-    <p>Basic command: <code>git push</code></p>
-  </div>
-  
-  <div id="advanced" class="example-content">
-    <p>Advanced command: <code>git push --force-with-lease origin main</code></p>
-  </div>
+<button class="collapsible">File Operations Commands</button>
+<div class="content">
+  <p>Commands related to file operations go here...</p>
 </div>
 
 <script>
-  function toggleExample(btn, type) {
-    // Deactivate all buttons in this toggle group
-    const toggleContainer = btn.parentElement;
-    const buttons = toggleContainer.querySelectorAll('.toggle-btn');
-    buttons.forEach(b => b.classList.remove('active'));
-    
-    // Activate clicked button
-    btn.classList.add('active');
-    
-    // Hide all content containers
-    const exampleContainer = toggleContainer.parentElement;
-    const contents = exampleContainer.querySelectorAll('.example-content');
-    contents.forEach(c => c.classList.remove('active'));
-    
-    // Show selected content
-    document.getElementById(type).classList.add('active');
+  var coll = document.getElementsByClassName("collapsible");
+  for (var i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+      this.classList.toggle("active");
+      var content = this.nextElementSibling;
+      if (content.style.maxHeight) {
+        content.style.maxHeight = null;
+      } else {
+        content.style.maxHeight = content.scrollHeight + "px";
+      }
+    });
   }
 </script>
 

@@ -54,27 +54,27 @@
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>adminwho</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a list of online admins, excluding deadminned admins.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">adminwho</code></td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>aghost</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Turn yourself into an admin ghost, or back again.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">aghost</code></td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>deadmin</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Removes all admin functions from the user.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">deadmin</code></td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>readmin</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns all admin functions to the user after they deadmin. Not necessary to run upon joining.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">readmin</code></td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>quit</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Closes the Game.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">quit</code></td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>tpto</strong></td>
@@ -99,22 +99,12 @@
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>votemenu</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Opens the 'Call Vote' menu.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">votemenu</code></td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>emergencycall</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Warns the server about a major emergency.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
-    </tr>
-    <tr style="background-color: #2b2721;">
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>setaccess</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Sets user access type. Admins can set themselves to be any user access type.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
-    </tr>
-    <tr style="background-color: #233134;">
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>setpassword</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Set a password for access.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Warns the server about an emergency. Players get forced in the current status of the server.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">emergencycall</code></td>
     </tr>
   </tbody>
 </table>
@@ -208,36 +198,41 @@
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>vvwrite</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Used to change a component's values.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">vvwrite 12345678 ComponentName Value</code>
+      </td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>vvread</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Used to read a component's values. Used like vvwrite.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">vvread 12345678 ComponentName</code>
+      </td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>addcomp</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Adds a component to an entity.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code>addcomp 1234567 Jittering</code>
+        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">addcomp 1234567 Jittering</code>
       </td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>fixgridatmos</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Resets the grid's atmos. This WILL reset pipe contents as well.<br><br>Be careful about running this on the main station, as this may also reset anything crew (e.g. atmos techs) did intentionally, like frezon production setups.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code>fixgridatmos 1234567</code>
+        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">fixgridatmos 1234567</code>
       </td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>showradiation</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Displays a radiation source's range, the entities it hits, and the radiation protection of entities.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code>showradiation</code>
+        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">showradiation</code>
       </td>
     </tr>
   </tbody>
 </table>
+
 
 ### Admin Abuse
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
@@ -252,55 +247,76 @@
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>setadminooc</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Changes color of your OOC messages. Persists between reconnects and servers, will not apply while <code>deadmin</code>ned.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>setadminooc #ff7777</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code style="background-color: rgba(27,31,35,0.05); border-radius: 3px; padding: 3px 5px; font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;">setadminooc #ff7777</code>
+      </td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>scale</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Lets you change an entity's scale. 1 is the default value.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>scale 1234567 0.5</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>scale 1234567 0.5</code>
+      </td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>playglobalsound</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Plays a sound based on the given path and sets the volume.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>playglobalsound /Uploaded/Skarlet/pretzels.ogg 1</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>playglobalsound /Uploaded/Skarlet/pretzels.ogg 1</code>
+      </td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>adduplink</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Adds an uplink to a PDA and links it to a user.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>adduplink Skarlet</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>adduplink Skarlet</code>
+      </td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>addobjective</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Adds an objective to the user. <a href="https://github.com/space-wizards/space-station-14/blob/master/Resources/Prototypes/Objectives/traitor.yml" target="_blank">Traitor objectives</a> can be found here.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>addobjective Skarlet CMOHyposprayStealObjective</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>addobjective Skarlet CMOHyposprayStealObjective</code>
+      </td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>rmobjective</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Removes an objective from the user. Objective number is found using <code>addobjective</code>.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>rmobjective Skarlet 0</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>rmobjective Skarlet 0</code>
+      </td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>setmind</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Puts the user’s soul into the ID (may require the entity to have a mind).</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>setmind 1234567 Skarlet</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>setmind 1234567 Skarlet</code>
+      </td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>addhand</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Adds a hand to the entity. Requires the "Hands" component in the entity.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>addhand 1234567</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>addhand 1234567</code>
+      </td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>addgamerule</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Adds the chosen game event to the game. Autocompletes.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>addgamerule MeteorSwarm</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>addgamerule MeteorSwarm</code>
+      </td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>endgamerule</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Removes the chosen game rule from the game. Autocompletes.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>endgamerule 1234567</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>endgamerule 1234567</code>
+      </td>
     </tr>
   </tbody>
 </table>
+
 
 ## Useful Commands
 :::info

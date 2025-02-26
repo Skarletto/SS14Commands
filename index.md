@@ -5,6 +5,10 @@
   This document aims to bring both common and obscure commands to light for ease of use by the admin team. <strong>Some of the examples used use arbitrary entity IDs as well as usernames for clarity.</strong> You should change these to fit your needs.
 </div><br>
 
+## Table of Contents
+* TOC
+{:toc}
+
 # Classic/VV commands
 ## Simple commands
 ### Helpful (Basics)

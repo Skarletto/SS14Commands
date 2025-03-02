@@ -292,7 +292,7 @@ Add more toolshed documentation
   <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
     <span class="hover-container">
       <strong>showaudio</strong>
-      <img src="images/showaudio.PNG" alt="Image" class="hover-image">
+      <img src="images/showaudio.png" alt="Image" class="hover-image">
     </span>
   </td>
   <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">

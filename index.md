@@ -14,7 +14,7 @@
   }
 </style>
 <div style="background-color: #2b2922; color: #dcc443; padding: 10px; border-left: 4px solid #dcc443;">
-  AS OF MARCH 3rd 2025 I BROKE THE MARKDOWN (lol) I'll fix it later, sorry for the INCONVENIENCE
+  AS OF MARCH 2nd 2025 I BROKE THE MARKDOWN (lol) I'll fix it later, sorry for the INCONVENIENCE
 </div><br>
 
 <div style="background-color: #252929; color: #3588b1; padding: 10px; border-left: 4px solid #3588b1;">

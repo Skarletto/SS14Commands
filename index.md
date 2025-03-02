@@ -11,7 +11,7 @@
 </style>
 
 <div style="background-color: #252929; color: #3588b1; padding: 10px; border-left: 4px solid #3588b1;">
-  This document aims to bring both common and obscure commands to light for ease of use by the admin team. <strong>Some of the examples used use arbitrary entity IDs as well as usernames for clarity.</strong> You should change these to fit your needs.
+  This document aims to bring both common and obscure commands to light for ease of use for admins and devs alike. <strong>Some of the examples used use arbitrary entity IDs as well as usernames for clarity.</strong> You should change these to fit your needs.
 </div><br>
 <style>
   .timestamp {
@@ -131,11 +131,18 @@ Add more toolshed documentation
       </td>
     </tr>
     <tr style="background-color: #233134;">
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>emergencycall</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Warns the server about an emergency. Players get forced in the current status of the server.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>cancelvote</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Cancels an ongoing vote. Autocompletes.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code>emergencycall</code>
+        <code>cancelvote 3</code>
       </td>
+    <tr style="background-color: #2b2721;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>warp</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Teleports you to a warp point.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>warp evac</code>
+      </td>
+    </tr>
     </tr>
   </tbody>
 </table>

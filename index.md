@@ -272,14 +272,14 @@ Add more toolshed documentation
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>showambient</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Displays a circle over every item that produces <strong>ambient sounds</strong> on screen, and their range. Red for inactive, orange for active but out of range, green for in range.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Displays a circle over every item that produces <strong>ambient sounds</strong> on screen, and their range. Red for inactive, orange for active out of range, green for active in range.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
         <code>showambient</code>
       </td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>showaudio</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Displays every item that produces <strong>active sounds</strong> on screen, and a bunch of stats like distance, volume, etc. Does not display anything unless you are in the sound's range. More robust than showambient in the way that this shows all sounds rather than ambient.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Displays every item that produces <strong>active sounds</strong> on screen, and a bunch of stats like distance, volume, etc. Does not display anything unless you are in the sound's range. More robust than showambient in the way that this shows all sounds rather than just ambient.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
         <code>showaudio</code>
       </td>

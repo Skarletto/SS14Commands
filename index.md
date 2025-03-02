@@ -1,5 +1,9 @@
 ---
 ---
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+
 <style>
   code {
     background-color: #1e1c1a; /* Darker background */

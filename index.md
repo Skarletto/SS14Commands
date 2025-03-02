@@ -23,7 +23,12 @@
     margin-top: -10;
   }
 </style>
-<div class="timestamp">Last updated: February 26, 2025</div>
+<div class="timestamp">Last updated: February 26, 2025<br>
+Current tasks:<br>
+Verify legitimacy of a few existing commands<br>
+Write a proper guide to prototypes<br>
+Add more toolshed documentation
+</div>
 
 ## Table of Contents
 * TOC

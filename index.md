@@ -29,6 +29,7 @@
 </style>
 <div class="timestamp">Last updated: March 2nd, 2025<br>
 Current tasks:<br>
+FIX THE SHITTY HTML/markddown OHHH MY GODH<br>
 Add images to commands that would benefit it<br>
 Write a proper guide to prototypes<br>
 Add more toolshed documentation

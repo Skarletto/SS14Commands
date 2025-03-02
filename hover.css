@@ -1,0 +1,21 @@
+.hover-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hover-container .hover-image {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 200px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hover-container:hover .hover-image {
+    display: block;
+}

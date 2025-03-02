@@ -27,9 +27,9 @@
     margin-top: -10;
   }
 </style>
-<div class="timestamp">Last updated: February 26, 2025<br>
+<div class="timestamp">Last updated: March 2nd, 2025<br>
 Current tasks:<br>
-Verify legitimacy of a few existing commands<br>
+Add images to commands that would benefit it<br>
 Write a proper guide to prototypes<br>
 Add more toolshed documentation
 </div>
@@ -282,8 +282,8 @@ Add more toolshed documentation
       </td>
     </tr>
     <tr style="background-color: #2b2721;">
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong class="hover-container">showaudio <img src="images/showaudio.PNG" alt="Visuals" class="hover-image"></strong>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Displays every item that produces <strong>active sounds</strong> on screen, and a bunch of stats like distance, volume, etc. Does not display anything unless you are in the sound's range. More robust than showambient in the way that this shows all sounds rather than just ambient.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong class="hover-container">showaudio<img src="images/showaudio.PNG" alt="Visuals" class="hover-image"></strong>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Displays every item that produces <strong>active sounds</strong> on screen, and a bunch of stats. Does not display anything unless you are in the sound's range. More robust than showambient in the way that this shows all sounds rather than just ambient.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
         <code>showaudio</code>
       </td>

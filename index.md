@@ -40,7 +40,7 @@ Add more toolshed documentation
 
 # Classic/VV commands
 ## Simple commands
-### Helpful (Basics)
+<h3>Helpful (Basics)</h3>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>
     <tr>
@@ -152,7 +152,7 @@ Add more toolshed documentation
 </table>
 
 
-### Helpful (Adminning)
+<h3>Helpful (Adminning)</h3>
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>
     <tr>
@@ -223,7 +223,7 @@ Add more toolshed documentation
 
 <!-- -->
 
-### Debug
+<h3>Debug</h3>
 
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>
@@ -295,7 +295,7 @@ Add more toolshed documentation
 
 <!-- -->
 
-### Admin Abuse
+<h3>Admin Abuse</h3>
 
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>
@@ -381,7 +381,7 @@ Add more toolshed documentation
 
 <br>
 
-## Useful Commands
+<h2>Useful Commands</h2>
 
 <div style="background-color: #252929; color: #3588b1; padding: 10px; border-left: 4px solid #3588b1;">
   All of these are achievable by VVing an entity and clicking the server components instead of writing a command.
@@ -407,7 +407,7 @@ Borg Laws
 
 <br>
 
-## Upload tutorial and commands
+<h2>Upload tutorial and commands</h2>
 
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>

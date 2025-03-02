@@ -13,7 +13,9 @@
     font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
   }
 </style>
-
+<div style="background-color: #2b2922; color: #dcc443; padding: 10px; border-left: 4px solid #3588b1;">
+  AS OF MARCH 3rd 2025 I BROKE THE MARKDOWN (lol) I'll fix it later, sorry for the INCONVENIENCE
+</div><br>
 <div style="background-color: #252929; color: #3588b1; padding: 10px; border-left: 4px solid #3588b1;">
   This document aims to bring both common and obscure commands to light for ease of use for admins and devs alike. <strong>Some of the examples used use arbitrary entity IDs as well as usernames for clarity.</strong> You should change these to fit your needs.
 </div><br>

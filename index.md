@@ -275,12 +275,19 @@ Add more toolshed documentation
       </td>
     </tr>
     <tr style="background-color: #2b2721;">
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>showradiation</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Displays a radiation source's range, the entities it hits, and the radiation protection of entities.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code>showradiation</code>
-      </td>
-    </tr>
+  <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+    <span class="hover-container">
+      <strong>showradiation</strong>
+      <img src="images/showradiation.png" alt="Image" class="hover-image">
+    </span>
+  </td>
+  <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+    Displays a radiation source's range, the entities it hits, and the radiation protection of entities.
+  </td>
+  <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+    <code>showradiation</code>
+  </td>
+</tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>showambient</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Displays a circle over every item that produces <strong>ambient sounds</strong> on screen, and their range. Red for inactive, orange for active out of range, green for active in range.</td>

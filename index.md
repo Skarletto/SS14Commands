@@ -44,7 +44,7 @@ Add more toolshed documentation
 
 # Classic/VV commands
 ## Simple commands
-<h3>Helpful (Basics)</h3>
+### Helpful (Basics)
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>
     <tr>
@@ -156,7 +156,8 @@ Add more toolshed documentation
 </table>
 
 
-<h3>Helpful (Adminning)</h3>
+### Helpful (Adminning)
+
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>
     <tr>

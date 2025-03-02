@@ -221,8 +221,10 @@ Add more toolshed documentation
   </tbody>
 </table>
 
+<!-- -->
 
 ### Debug
+
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>
     <tr>
@@ -291,7 +293,10 @@ Add more toolshed documentation
   </tbody>
 </table>
 
+<!-- -->
+
 ### Admin Abuse
+
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>
     <tr>
@@ -377,6 +382,7 @@ Add more toolshed documentation
 <br>
 
 ## Useful Commands
+
 <div style="background-color: #252929; color: #3588b1; padding: 10px; border-left: 4px solid #3588b1;">
   All of these are achievable by VVing an entity and clicking the server components instead of writing a command.
 </div><br>
@@ -402,6 +408,7 @@ Borg Laws
 <br>
 
 ## Upload tutorial and commands
+
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>
     <tr>

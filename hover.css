@@ -2,18 +2,25 @@
     position: relative;
     display: inline-block;
     cursor: pointer;
+    text-decoration: underline dashed; /* Dashed underline to indicate hover */
+    text-decoration-color: #ccc; /* Adjust color for visibility */
 }
 
-.hover-container .hover-image {
+.hover-image {
     display: none;
     position: absolute;
     top: 100%;
     left: 50%;
     transform: translateX(-50%);
-    width: 200px;
+    max-width: none; /* Allow full-size display */
+    width: auto; /* Ensure it doesn’t shrink */
+    height: auto;
     border: 2px solid #333;
     border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 5px;
+    z-index: 10; /* Ensure it appears on top */
 }
 
 .hover-container:hover .hover-image {

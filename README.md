@@ -1,7 +1,7 @@
 # SS14 Commands/Toolshed Documentation
 [![forthebadge](https://forthebadge.com/images/badges/gluten-free.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-crayons.svg)](https://forthebadge.com) 
 
-## Currently a work in progress. Thing may not be complete yet. Bear with me.
+## Currently a work in progress. Things may not be complete yet. Bear with me.
 Current tasks:
 
 FIX THE SHITTY HTML/markddown OHHH MY GODH

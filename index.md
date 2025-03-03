@@ -586,7 +586,3 @@ Make everyone scream: `> entities with Actor do "osay $ID Emote screams!"`
 
 Night shift lighting: `> entities prototyped Poweredlight do "vvwrite /entity/$ID/PointLight/Radius 4.5" do "vvwrite /entity/$ID/PointLight/Energy 0.5" do "vvwrite /entity/$ID/PointLight/Softness 3"`
 
-# Other
-:::danger
-Skarlet is silly.
-:::

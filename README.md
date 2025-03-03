@@ -17,7 +17,7 @@ Add more toolshed documentation
 
 Thank you everyone for either helping me learn how to use admin tooling during the year that I was an admin on Wizden, or for contributing to the original document:
 
-**Repo, Kezu, Veritius, ilyamikcoder, RyanStrudfelt, Pancake, ShadowCommander, CptJeanLuc, nikthechampiongr, luckyshotpictures**
+**Chief_Engineer, Repo, Kezu, Veritius, ilyamikcoder, RyanStrudfelt, Pancake, ShadowCommander, CptJeanLuc, nikthechampiongr, luckyshotpictures**
 
 Thank you to every admin in the adminbus who contributed to the document through outside means like teaching other mins or sharing their own documents:
 

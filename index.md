@@ -392,34 +392,15 @@ Add more toolshed documentation
         <code>endgamerule 1234567</code>
       </td>
     </tr>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>damage</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Deals or heals damage. Positive for deal, negative for heal. Syntax goes "damage Type Amount [ignoreResistances in a true or false] uID". Setting ignoreresistances to false will take into account armor and other resistances when dealing damage.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>damage Brute 30 true 2964</code>
+      </td>
+    </tr>
   </tbody>
 </table>
-
-<br>
-
-##Useful Commands
-
-<div style="background-color: #252929; color: #3588b1; padding: 10px; border-left: 4px solid #3588b1;">
-  All of these are achievable by VVing an entity and clicking the server components instead of writing a command.
-</div><br>
-aGhost privacy strings
-
-:   Change your ghost's layer with:
-
-        vvwrite /player/Skarlet/AttachedEntity/Visibility/Layer 7
-
-    Putting your ghost on layer 7 puts you on a different layer than other ghosts, which means you won't be seen by anyone but those who can see layer 7.
-    
-    With the same notion, setting your layer to 0 would make you visible to players. Sadly, you won't be able to set your layer back to normal after the fact and players will still see you no matter what layer you set yourself to, meaning you'll need to aghost once more.
-    
-    You can also set the layer your eyes can see; by default, aghosts cannot see all layers. You have to manually set it with:
-    
-        vvwrite /player/Skarlet/AttachedEntity/Eye/VisibilityMask 7
-
-Borg Laws
-:   Check borg laws with:
-    
-        player:entity "nikthechampiongr" laws:get
 
 <br>
 

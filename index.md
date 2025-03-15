@@ -27,7 +27,7 @@
     margin-top: -10;
   }
 </style>
-<div class="timestamp">Last updated: March 2nd, 2025<br>
+<div class="timestamp">Last updated: March 14th, 2025<br>
 Current tasks:<br>
 FIX THE SHITTY HTML/markddown OHHH MY GODH<br>
 Add images to commands that would benefit it<br>

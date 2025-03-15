@@ -443,11 +443,11 @@ Uploading a prototype with `uploadfile` WIP
 :    Uploading singular files is very straightforward, but if you are uploading multiple files for, example, a prototype, it can become quite tiresome. Here is an example to show exactly how to use this command to upload a prototype.
 
         In this example, I will upload a custom neck item that displays stars on top of the character wearing it.
-        First, we need the code. Yml is thankfully not very hard to work with- Every prototype upload can basically be copied off from an existing prototype and frankensteined into whatever you want it to be.
+        First, we need the code. 
+
+        Yml is thankfully not very hard to work with- Every prototype upload can basically be copied off from an existing prototype and frankensteined into whatever you want it to be.
         So here:
 
-        uploadfile Skarlet/pretzels.ogg
-        Then all you need to do is run playglobalsound the way I formatted
 
 # VV/Components Documentation
 ```

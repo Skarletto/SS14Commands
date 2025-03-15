@@ -1,6 +1,8 @@
 # SS14 Commands/Toolshed Documentation
 [![forthebadge](https://forthebadge.com/images/badges/gluten-free.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/made-with-crayons.svg)](https://forthebadge.com) 
 
+All assets including images and code in the /prototypes folder are under a Creative Commons 3.0 BY-SA license unless otherwise indicated.
+
 ## Currently a work in progress. Things may not be complete yet. Bear with me.
 Current tasks:
 

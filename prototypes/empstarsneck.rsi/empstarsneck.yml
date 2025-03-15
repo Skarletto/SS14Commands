@@ -1,0 +1,13 @@
+#NECK
+- type: entity
+  parent: ClothingMaskBase
+  id: SkarStarsNeck
+  name: holy stars
+  description: Amen.
+  components:
+  - type: Sprite
+    sprite: /Uploaded/Skarlet/empstarsneck.rsi
+    
+#uploadfile Skarlet/empstarsneck.rsi/equipped-MASK.png
+#uploadfile Skarlet/empstarsneck.rsi/icon.png
+#uploadfile Skarlet/empstarsneck.rsi/meta.json

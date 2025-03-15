@@ -424,9 +424,9 @@ Add more toolshed documentation
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>uploadfolder</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Used to upload a folder. The folder's name has to be one word or it won't work. [NEED ASSISTANCE]</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Used to upload a folder. The folder's name has to be one word or it won't work. [NEEDS DOCUMENTATION]</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code>scale 1234567 0.5</code>
+        <code></code>
       </td>
     </tr>
     <tr style="background-color: #233134;">

@@ -440,7 +440,7 @@ Add more toolshed documentation
 </table>
 
 ### Uploading a prototype with `uploadfile`
-<a href="https://github.com/Skarletto/SS14Commands/tree/main/prototypes/empstarsneck.rsi" target="_blank">The files used in this example can be found here!</a></td>
+<a href="https://github.com/Skarletto/SS14Commands/tree/main/prototypes/empstarsneck.rsi" target="_blank"><strong>The files used in this example can be found here!</strong></a>
 
 Uploading singular files is very straightforward. Here is an example to show exactly how to use this command to upload a prototype. In this example, I will upload a custom neck item that displays stars on top of the character wearing it. First, we need to prepare our files.
 
@@ -450,7 +450,7 @@ Regular clothing items really only need an equipped sprite, an icon sprite, and 
 
 To have a properly formatted meta.json, you can just copy one from the game files. There's a lot of examples in there, and once you're familiar with how they work, you'll be able to write your own (to be fair using the existing ones is a QoL lol). <span class="hover-container">Here is how the meta.json file looks for this example.<img src="images/meta.png" alt="Image" class="hover-image">
 
-Once that's all prepped up, we gotta move onto the code for the item. Yml is thankfully not very hard to work with- Every prototype upload can basically be copied off from an existing prototype and frankensteined into whatever you want it to be. The format is also super straight-forward, and I had zero coding knowledge when I started working with them. Just gotta get used to it. Anyways, a prototype works as follows: Each item has a list of components added to it that makes it that very item.
+Once that's all prepped up, we gotta move onto the code for the item. Yml is thankfully not very hard to work with- Every prototype upload can basically be copied off from an existing prototype and frankensteined into whatever you want it to be. The format is also super straight-forward, and I had zero coding knowledge when I started working with them. Just gotta get used to it. Anyways, a prototype is basically just a long list of components added to it that makes it into an item with properties.
 
 For example, here's our stars' prototype:
 

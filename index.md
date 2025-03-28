@@ -506,10 +506,11 @@ Once you upload all of your necessary files, you can finally run the yml. `loadp
 You will most likely need to alter the names of your prototype if you are testing things as you go, because the upload system is a little silly. Values in a YML can be edited and re-uploaded easily, but assets like images will need either a dev-environment restart or need you to rename them to produce a separate item.
 
 # VV/Components Documentation
-```
- stationID, then open StationBankAccountComponent
-```
-Lets you adjust the station's spesos account.
+
+#### Adding/Removing funds from the station's bank
+You can find the station's ID easily by typing `stations:list` in the console.
+After getting the station's ID, you can `vv 12345`, select the "StationBankAccount" component, and edit the Balance's value.
+You can even make the station LOSE money actively by setting the increase to a negative number.
 
 
 ***Mind-related Components***
@@ -575,23 +576,28 @@ Toolshed commands must start with a `>` to work properly. The official (unfinish
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>prototyped</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Lists entities that are a specific prototype. (e.g. `prototyped PoweredLight`)</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Will return all entities .</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>>entities prototyped MobHuman</code></td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>actor:controlled</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Lists entities that are actively being controlled (i.e. active players).</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Will return all entities that are currently controlled by a player.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities actor:controlled select 5</code></td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>self</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns the EID of yourself.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns your own entity ID.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> self do "addcomp $ID Jittering"</code></td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>do</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Runs normal commands for each entity in the list provided. Must be used at end of Toolshed string. All commands must be wrapped in quotations and inner quotes must be escaped (e.g `do "thing $ID \"stuff\"`).</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Runs regular commands for each entity in the list provided. All commands must be wrapped in quotations and inner quotes must be escaped (e.g <code>do "thing $ID \"stuff\"</code>).</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"></td>
+    </tr>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>visualize</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Displays a window of all corresponding results.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities prototyped MobHuman visualize</code></td>
     </tr>
   </tbody>
 </table>

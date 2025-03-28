@@ -485,34 +485,47 @@ Add more toolshed documentation
             Tutorial for Stars Prototype
         </label>
         <div class="collapsible-content markdown-content">
-            <p><a href="https://github.com/Skarletto/SS14Commands/tree/main/prototypes/empstarsneck.rsi" target="_blank"><strong>The files used in this example can be found here!</strong></a>
+            <p><a href="https://github.com/Skarletto/SS14Commands/tree/main/prototypes/empstarsneck.rsi" target="_blank">
+                <strong>The files used in this example can be found here!</strong>
+            </a></p>
 
-<p>Uploading singular files is very straightforward. Here is an example to show exactly how to use this command to upload a prototype. In this example, I will upload a custom neck item that displays stars on top of the character wearing it. First, we need to prepare our files.</p>
+            <p>Uploading singular files is very straightforward. Here is an example to show exactly how to use this command to upload a prototype. In this example, I will upload a custom neck item that displays stars on top of the character wearing it. First, we need to prepare our files.</p>
 
-<p>Regular clothing items really only need an equipped sprite, an icon sprite, and a meta.json file. If this is for an event, you don't really need to add in-hands sprites, so I usually don't bother. I suggest keeping all your sprites/meta.json in the same folder just for ease of access, like the actual files in game. The actual location of each file does not matter when using `uploadfile`, you can separate them if you reeeally want.</p>
+            <p>Regular clothing items really only need an equipped sprite, an icon sprite, and a meta.json file. If this is for an event, you don't really need to add in-hands sprites, so I usually don't bother. I suggest keeping all your sprites/meta.json in the same folder just for ease of access, like the actual files in game. The actual location of each file does not matter when using <code>uploadfile</code>, you can separate them if you really want.</p>
 
-<p><img class="content-image" src="https://github.com/user-attachments/assets/856ba119-a281-4fc8-8933-314ab20db1d0" alt="Prototype Example"></p>
+            <p><img class="content-image" src="https://github.com/user-attachments/assets/856ba119-a281-4fc8-8933-314ab20db1d0" alt="Prototype Example"></p>
 
-<p>To have a properly formatted meta.json, you can just copy one from the game files. There's a lot of examples in there, and once you're familiar with how they work, you'll be able to write your own (to be fair using the existing ones is a QoL lol). <span class="hover-container">Here is how the meta.json file looks for this example.<img src="images/meta.png" alt="Image" class="hover-image"></span> If your sprite is animated, you will need delays to tell the game at what speed it needs to play each sprite. You can tweak every individual number to your liking, so feel free to mess around with that.</p>
+            <p>To have a properly formatted <code>meta.json</code>, you can just copy one from the game files. There's a lot of examples in there, and once you're familiar with how they work, you'll be able to write your own (to be fair using the existing ones is a QoL lol). Here is how the <code>meta.json</code> file looks for this example:</p>
+            
+            <span class="hover-container">
+                <img src="images/meta.png" alt="Meta JSON Example" class="hover-image">
+            </span>
 
-<p>Once that's all prepped up, we gotta move onto the code for the item. Yml is thankfully not very hard to work with- Every prototype upload can basically be copied off from an existing prototype and frankensteined into whatever you want it to be. The format is also super straight-forward, and I had zero coding knowledge when I started working with them. Just gotta get used to it. Anyways, a prototype is basically just a long list of components added to it that makes it into an item with properties.</p>
+            <p>If your sprite is animated, you will need delays to tell the game at what speed it needs to play each sprite. You can tweak every individual number to your liking, so feel free to mess around with that.</p>
 
-<p>For example, here's our stars' prototype:</p>
+            <p>Once that's all prepped up, we gotta move onto the code for the item. YML is thankfully not very hard to work with—every prototype upload can basically be copied off from an existing prototype and frankensteined into whatever you want it to be. The format is also super straightforward, and I had zero coding knowledge when I started working with them. Just gotta get used to it. Anyways, a prototype is basically just a long list of components added to it that makes it into an item with properties.</p>
 
-![image](https://github.com/user-attachments/assets/64ca3125-783d-4038-86f0-e4e7955dfe0e)
+            <p>For example, here's our stars' prototype:</p>
 
-<p>To make this prototype, I looked at how other similar items were formatted in \Prototypes\Entities\Clothing\Neck. Reason why this looks so empty is because I specified a parent. That means the prototype will inherit every single component from that parent, and anything specified in the child's file will override it's parent's. So by adding a sprite component to the child, we're overriding the parent's sprite.</p>
+            <p><img src="https://github.com/user-attachments/assets/64ca3125-783d-4038-86f0-e4e7955dfe0e" alt="Stars Prototype"></p>
 
-<p>You can trace back the origin of most prototypes to a singular parent. Everything is just frankenstein'd together and built atop one another- Which also means it's really easy to make your own prototypes. I also commented out the commands I need to run so I can easily paste them in the command line in-game.</p>
+            <p>To make this prototype, I looked at how other similar items were formatted in <code>\Prototypes\Entities\Clothing\Neck</code>. The reason why this looks so empty is because I specified a parent. That means the prototype will inherit every single component from that parent, and anything specified in the child's file will override its parent's. So by adding a sprite component to the child, we're overriding the parent's sprite.</p>
 
-<p>Now, all we need to do is upload all of the files and run the yml. This is also super simple: <code>uploadfile Skarlet/empstarsneck.rsi/equipped-MASK.png</code> . This will open a window, where you are able to select which file to upload. So, we upload <code>equipped-MASK.png</code>. In turn, this uploads to a new folder we create through the command, <code>empstarsneck.rsi</code>, which is inside of MY upload folder. The upload folder is named after your username, so if you ever plan on using these, make sure to edit my name out before uploading, otherwise it'll upload all of these in your upload folder, in a folder named Skarlet.</p>
+            <p>You can trace back the origin of most prototypes to a singular parent. Everything is just frankensteined together and built atop one another—Which also means it's really easy to make your own prototypes. I also commented out the commands I need to run so I can easily paste them in the command line in-game.</p>
 
-<p>Once you upload all of your necessary files, you can finally run the yml. <code>loadprototype</code> will open a window that lets you select which file you wish to open. This will load the item and make it available to spawn, unless there is an error with the prototype. Most common errors in prototype making are empty spaces in unintended areas and typos. Make sure everything that is referenced in multiple areas and files are properly written.</p>
+            <p>Now, all we need to do is upload all of the files and run the YML. This is also super simple:</p>
+            
+            <p><code>uploadfile Skarlet/empstarsneck.rsi/equipped-MASK.png</code></p>
 
-<p>You will most likely need to alter the names of your prototype if you are testing things as you go, because the upload system is a little silly. Values in a YML can be edited and re-uploaded easily, but assets like images will need either a dev-environment restart or need you to rename them to produce a separate item.</p>
+            <p>This will open a window, where you are able to select which file to upload. So, we upload <code>equipped-MASK.png</code>. In turn, this uploads to a new folder we create through the command, <code>empstarsneck.rsi</code>, which is inside of MY upload folder. The upload folder is named after your username, so if you ever plan on using these, make sure to edit my name out before uploading, otherwise it'll upload all of these in your upload folder, in a folder named <code>Skarlet</code>.</p>
+
+            <p>Once you upload all of your necessary files, you can finally run the YML. <code>loadprototype</code> will open a window that lets you select which file you wish to open. This will load the item and make it available to spawn, unless there is an error with the prototype. Most common errors in prototype making are empty spaces in unintended areas and typos. Make sure everything that is referenced in multiple areas and files is properly written.</p>
+
+            <p>You will most likely need to alter the names of your prototype if you are testing things as you go, because the upload system is a little silly. Values in a YML can be edited and re-uploaded easily, but assets like images will need either a dev-environment restart or need you to rename them to produce a separate item.</p>
         </div>
     </div>
 </body>
+
 
 ### Uploading a prototype with `uploadfile`
 <a href="https://github.com/Skarletto/SS14Commands/tree/main/prototypes/empstarsneck.rsi" target="_blank"><strong>The files used in this example can be found here!</strong></a>

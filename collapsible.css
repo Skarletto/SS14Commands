@@ -1,0 +1,44 @@
+/* Collapsible Passages Styles */
+
+/* Hide the checkbox */
+.collapsible-input {
+    display: none;
+}
+
+/* Styling for the label (which acts as the clickable header) */
+.collapsible-label {
+    background-color: #f1f1f1;
+    cursor: pointer;
+    padding: 15px 15px 15px 35px;
+    width: 100%;
+    display: block;
+    position: relative;
+    font-size: 16px;
+}
+
+/* Arrow styling */
+.collapsible-label::before {
+    content: '▶';
+    position: absolute;
+    left: 15px;
+    transition: transform 0.3s ease;
+}
+
+/* Content styling */
+.collapsible-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    background-color: #f9f9f9;
+    padding: 0 15px;
+}
+
+/* When checkbox is checked, rotate arrow and show content */
+.collapsible-input:checked + .collapsible-label::before {
+    transform: rotate(90deg);
+}
+
+.collapsible-input:checked ~ .collapsible-content {
+    max-height: 500px;
+    padding: 15px;
+}

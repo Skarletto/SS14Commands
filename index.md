@@ -480,11 +480,11 @@ Add more toolshed documentation
 
 <body>
     <div>
-        <input type="checkbox" id="section1" class="collapsible-input">
-        <label for="section1" class="collapsible-label">
-            Tutorial Section
+        <input type="checkbox" id="tutorial" class="collapsible-input">
+        <label for="tutorial" class="collapsible-label">
+            Tutorial for Stars Prototype
         </label>
-        <div class="collapsible-content">
+        <div class="collapsible-content markdown-content">
             <p>C<a href="https://github.com/Skarletto/SS14Commands/tree/main/prototypes/empstarsneck.rsi" target="_blank"><strong>The files used in this example can be found here!</strong></a>
 
 Uploading singular files is very straightforward. Here is an example to show exactly how to use this command to upload a prototype. In this example, I will upload a custom neck item that displays stars on top of the character wearing it. First, we need to prepare our files.

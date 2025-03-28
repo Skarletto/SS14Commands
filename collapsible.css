@@ -1,23 +1,17 @@
 /* Collapsible Passages Styles */
-
-/* Hide the checkbox */
 .collapsible-input {
     display: none;
 }
 
-/* Styling for the label (which acts as the clickable header) */
 .collapsible-label {
-    background-color: transparent;
     cursor: pointer;
-    padding: 0 0 0 20px;
-    width: 100%;
-    display: block;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
     position: relative;
-    font-size: 16px;
     font-weight: bold;
 }
 
-/* Arrow styling */
 .collapsible-label::before {
     content: '▶';
     position: absolute;
@@ -25,20 +19,15 @@
     transition: transform 0.3s ease;
 }
 
-/* Content styling */
 .collapsible-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    display: none;
     padding-left: 20px;
 }
 
-/* When checkbox is checked, rotate arrow and show content */
 .collapsible-input:checked + .collapsible-label::before {
     transform: rotate(90deg);
 }
 
 .collapsible-input:checked ~ .collapsible-content {
-    max-height: 1000px; /* Increased to allow more content */
-    overflow-y: auto; /* Allow scrolling if content is long */
+    display: block;
 }

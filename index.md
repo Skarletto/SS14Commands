@@ -2,6 +2,7 @@
 ---
 <head>
     <link rel="stylesheet" href="hover.css">
+    <link rel="stylesheet" href="collapsible.css">
 </head>
 
 <style>
@@ -476,6 +477,43 @@ Add more toolshed documentation
 <div style="background-color: #2b2020; color: #ba3b3b; padding: 10px; border-left: 4px solid #ba3b3b;">
   Be extremely careful when uploading prototypes. It is *very* easy to kill the server or end a round. If you are unsure whether your prototype works or if it is up to date, test run it in a dev environment or empty server first.
 </div><br>
+
+<body>
+    <div>
+        <input type="checkbox" id="section1" class="collapsible-input">
+        <label for="section1" class="collapsible-label">
+            Tutorial Section
+        </label>
+        <div class="collapsible-content">
+            <p>C<a href="https://github.com/Skarletto/SS14Commands/tree/main/prototypes/empstarsneck.rsi" target="_blank"><strong>The files used in this example can be found here!</strong></a>
+
+Uploading singular files is very straightforward. Here is an example to show exactly how to use this command to upload a prototype. In this example, I will upload a custom neck item that displays stars on top of the character wearing it. First, we need to prepare our files.
+
+Regular clothing items really only need an equipped sprite, an icon sprite, and a meta.json file. If this is for an event, you don't really need to add in-hands sprites, so I usually don't bother. I suggest keeping all your sprites/meta.json in the same folder just for ease of access, like the actual files in game. The actual location of each file does not matter when using `uploadfile`, you can separate them if you reeeally want.
+
+![image](https://github.com/user-attachments/assets/856ba119-a281-4fc8-8933-314ab20db1d0)
+
+To have a properly formatted meta.json, you can just copy one from the game files. There's a lot of examples in there, and once you're familiar with how they work, you'll be able to write your own (to be fair using the existing ones is a QoL lol). <span class="hover-container">Here is how the meta.json file looks for this example.<img src="images/meta.png" alt="Image" class="hover-image"></span> If your sprite is animated, you will need delays to tell the game at what speed it needs to play each sprite. You can tweak every individual number to your liking, so feel free to mess around with that.
+
+Once that's all prepped up, we gotta move onto the code for the item. Yml is thankfully not very hard to work with- Every prototype upload can basically be copied off from an existing prototype and frankensteined into whatever you want it to be. The format is also super straight-forward, and I had zero coding knowledge when I started working with them. Just gotta get used to it. Anyways, a prototype is basically just a long list of components added to it that makes it into an item with properties.
+
+For example, here's our stars' prototype:
+
+![image](https://github.com/user-attachments/assets/64ca3125-783d-4038-86f0-e4e7955dfe0e)
+
+To make this prototype, I looked at how other similar items were formatted in \Prototypes\Entities\Clothing\Neck. Reason why this looks so empty is because I specified a parent. That means the prototype will inherit every single component from that parent, and anything specified in the child's file will override it's parent's. So by adding a sprite component to the child, we're overriding the parent's sprite. 
+
+You can trace back the origin of most prototypes to a singular parent. Everything is just frankenstein'd together and built atop one another- Which also means it's really easy to make your own prototypes. I also commented out the commands I need to run so I can easily paste them in the command line in-game.
+
+Now, all we need to do is upload all of the files and run the yml. This is also super simple: `uploadfile Skarlet/empstarsneck.rsi/equipped-MASK.png` . This will open a window, where you are able to select which file to upload. So, we upload `equipped-MASK.png`. In turn, this uploads to a new folder we create through the command, `empstarsneck.rsi`, which is inside of MY upload folder. The upload folder is named after your username, so if you ever plan on using these, make sure to edit my name out before uploading, otherwise it'll upload all of these in your upload folder, in a folder named Skarlet.
+
+Once you upload all of your necessary files, you can finally run the yml. `loadprototype` will open a window that lets you select which file you wish to open. This will load the item and make it available to spawn, unless there is an error with the prototype. Most common errors in prototype making are empty spaces in unintended areas and typos. Make sure everything that is referenced in multiple areas and files are properly written.
+
+You will most likely need to alter the names of your prototype if you are testing things as you go, because the upload system is a little silly. Values in a YML can be edited and re-uploaded easily, but assets like images will need either a dev-environment restart or need you to rename them to produce a separate item.</p>
+        </div>
+    </div>
+</body>
+
 ### Uploading a prototype with `uploadfile`
 <a href="https://github.com/Skarletto/SS14Commands/tree/main/prototypes/empstarsneck.rsi" target="_blank"><strong>The files used in this example can be found here!</strong></a>
 

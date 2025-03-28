@@ -41,7 +41,7 @@ Add more toolshed documentation
 
 # Classic/VV commands
 ## Simple commands
-### Helpful (Basics)
+### Basics / Navigation
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>
     <tr>
@@ -153,7 +153,7 @@ Add more toolshed documentation
 </table>
 
 
-### Helpful (Adminning)
+### General Adminning
 
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
   <thead>
@@ -208,7 +208,7 @@ Add more toolshed documentation
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>ban_exemption_update</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Used for adding ban exemptions, e.g., to exclude a player from an IP ban on shared connections. These exemptions require votes.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Used for adding ban exemptions, e.g., to exclude a player from an IP ban on shared connections.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
         <code>ban_exemption_update Repo 127.0.0.1</code>
       </td>
@@ -218,6 +218,27 @@ Add more toolshed documentation
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Used to see every entity you can find when right-clicking a tile.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
         <code>menuvis all</code> to use <code>menuvis</code> to remove
+      </td>
+    </tr>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>adminnotes</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Opens the note panel for the given player. Works even if the player is offline.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>adminnotes Skarlet</code>
+      </td>
+    </tr>
+    <tr style="background-color: #2b2721;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>banpanel</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Opens the ban panel. From there, you can specify which player to ban, reason, duration, severity, etc.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>banpanel</code>
+      </td>
+    </tr>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>stealthmin</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Hides you from adminwho. Does not hide you from ahelp.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>stealthmin</code>
       </td>
     </tr>
   </tbody>
@@ -397,6 +418,20 @@ Add more toolshed documentation
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Deals or heals damage. Positive for deal, negative for heal. Syntax goes "damage Type Amount [ignoreResistances in a true or false] uID". Setting ignoreresistances to false will take into account armor and other resistances when dealing damage.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
         <code>damage Brute 30 true 2964</code>
+      </td>
+    </tr>
+    <tr style="background-color: #2b2721;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>osay</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Makes the specified entity either Speak, Emote, or Whisper. Specified entity must be an ID.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>osay 123456 Emote screams!</code>
+      </td>
+    </tr>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>showghosts</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Will either show or hide ghosts to all players with a true or false.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>showghost true</code>
       </td>
     </tr>
   </tbody>

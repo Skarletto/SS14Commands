@@ -608,30 +608,18 @@ Toolshed commands must start with a <code>></code> to work properly. The officia
   </tbody>
 </table>
 
-## String examples
+## Various Toolshed Strings
+### Adminning
 
-Playing with `entities`
-:	`entities` lets you affect multiple entities at once with your commands. You can mix and match commands to achieve a lot of useful or fun things. In the example here, we use entities to return a BQL list of all ghosts:
+Find all player controlled observers: `> entities actor:controlled with Ghost visualize`
 
-       > entities with Ghost visualize
-       OR
-       > entities prototyped MobObserver visualize
-
-    These particular strings are useful should you need to find out how many ghosts you have access to for an event.
-
-```
-> stations:get
-```
-Lets you find out what the station's entity ID is.
-
-## Useful Toolshed Commands
-Delete all space garbage: `> entities with SpaceGarbage delete`
-
-# Fun
-
+### Fun
 Turn all MobGlockroach into ghost roles with custom text: `> entities prototyped MobGlockroach do "makeghostrole $ID GLOCKROACH \"ARRGGHHH\" \"BANG BANG POW\""`
 
 Make everyone scream: `> entities with Actor do "osay $ID Emote screams!"`
 
 Night shift lighting: `> entities prototyped Poweredlight do "vvwrite /entity/$ID/PointLight/Radius 4.5" do "vvwrite /entity/$ID/PointLight/Energy 0.5" do "vvwrite /entity/$ID/PointLight/Softness 3"`
 
+### Debug
+
+Delete all space garbage: `> entities with SpaceGarbage delete`

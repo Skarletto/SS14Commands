@@ -610,16 +610,21 @@ Toolshed commands must start with a <code>></code> to work properly. The officia
 
 ## Various Toolshed Strings
 ### Adminning
-
-Find all player controlled observers: `> entities actor:controlled with Ghost visualize`
+#### Find all player controlled observers
+So you don't have to fly around looking for ghosts
+`> entities actor:controlled with Ghost visualize`
 
 ### Fun
-Turn all MobGlockroach into ghost roles with custom text: `> entities prototyped MobGlockroach do "makeghostrole $ID GLOCKROACH \"ARRGGHHH\" \"BANG BANG POW\""`
+#### Turn all MobGlockroach into ghost roles with custom text
+makeghostrole's syntax goes Role Name, Description and Rules
+`> entities prototyped MobGlockroach do "makeghostrole $ID GLOCKROACH \"ARRGGHHH\" \"BANG BANG POW\""`
 
-Make everyone scream: `> entities with Actor do "osay $ID Emote screams!"`
+![image](https://github.com/user-attachments/assets/fa7a0cee-2908-4011-a6cd-a4696eea8cb6)
 
-Night shift lighting: `> entities prototyped Poweredlight do "vvwrite /entity/$ID/PointLight/Radius 4.5" do "vvwrite /entity/$ID/PointLight/Energy 0.5" do "vvwrite /entity/$ID/PointLight/Softness 3"`
+#### Make everyone scream
+`> entities actor:controlled do "osay $ID Emote screams!"`
 
 ### Debug
-
-Delete all space garbage: `> entities with SpaceGarbage delete`
+#### Delete all space garbage
+Good if your server is experiencing gigalag
+`> entities with SpaceGarbage delete`

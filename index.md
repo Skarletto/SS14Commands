@@ -29,12 +29,11 @@
   }
 </style>
 <div class="timestamp">Last updated: March 29th, 2025<br>
-Last edits: Toolshed examples<br>
+Last edit:<br>
+Toolshed update/cleanup<br>
 Current tasks:<br>
 FIX THE SHITTY HTML/markddown OHHH MY GODH<br>
-Add images to commands that would benefit it<br>
-Write a proper guide to prototypes<br>
-Update the toolshed documentation, cull what's unecessary, clarify passages
+Add images to commands that would benefit it
 </div>
 
 ## Table of Contents

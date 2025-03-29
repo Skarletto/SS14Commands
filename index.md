@@ -29,11 +29,12 @@
   }
 </style>
 <div class="timestamp">Last updated: March 28th, 2025<br>
+Last edits: Additional commands, stationbank tutorial cleanup<br>
 Current tasks:<br>
 FIX THE SHITTY HTML/markddown OHHH MY GODH<br>
 Add images to commands that would benefit it<br>
 Write a proper guide to prototypes<br>
-Add more toolshed documentation
+Update the toolshed documentation, cull what's unecessary, clarify passages
 </div>
 
 ## Table of Contents

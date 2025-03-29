@@ -542,7 +542,7 @@ Toolshed commands must start with a `>` to work properly. The official (unfinish
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>entities</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a list of all entities. Must be used with a filter (<code>with</code> or <code>prototyped</code>) to be effective.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a list of all entities. Should be used with a filter (like <code>with</code> or <code>prototyped</code>).</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities with HeadRevolutionary comp:rm Cuffable</code></td>
     </tr>
     <tr style="background-color: #233134;">

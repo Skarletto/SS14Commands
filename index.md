@@ -32,6 +32,7 @@
 Last edit:<br>
 Toolshed update/cleanup<br>
 Current tasks:<br>
+Script tutorial<br>
 FIX THE SHITTY HTML/markddown OHHH MY GODH<br>
 Add images to commands that would benefit it
 </div>

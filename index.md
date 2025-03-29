@@ -609,17 +609,49 @@ Toolshed commands must start with a <code>></code> to work properly. The officia
 </table>
 
 ## Various Toolshed Strings
-### Adminning
-
-Find all player controlled observers: `> entities actor:controlled with Ghost visualize`
-
-### Fun
-Turn all MobGlockroach into ghost roles with custom text: `> entities prototyped MobGlockroach do "makeghostrole $ID GLOCKROACH \"ARRGGHHH\" \"BANG BANG POW\""`
-
-Make everyone scream: `> entities with Actor do "osay $ID Emote screams!"`
-
-Night shift lighting: `> entities prototyped Poweredlight do "vvwrite /entity/$ID/PointLight/Radius 4.5" do "vvwrite /entity/$ID/PointLight/Energy 0.5" do "vvwrite /entity/$ID/PointLight/Softness 3"`
-
-### Debug
-
-Delete all space garbage: `> entities with SpaceGarbage delete`
+<table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
+  <thead>
+    <tr>
+      <th style="padding: 12px 15px; text-align: left; background-color: #1e1c1a; color: white; border-top-left-radius: 6px;">Type</th>
+      <th style="padding: 12px 15px; text-align: left; background-color: #1e1c1a; color: white;">Description</th>
+      <th style="padding: 12px 15px; text-align: left; background-color: #1e1c1a; color: white; border-top-right-radius: 6px;">Syntax</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>Useful</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Find all player controlled observers.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>> entities actor:controlled with Ghost visualize</code>
+      </td>
+    </tr>
+    <tr style="background-color: #2b2721;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>Fun</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Turn all MobGlockroach into ghost roles with custom text.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>> entities prototyped MobGlockroach do "makeghostrole $ID GLOCKROACH \"ARRGGHHH\" \"BANG BANG POW\""</code>
+      </td>
+    </tr>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>Fun</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Night shift lighting.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>> entities prototyped Poweredlight do "vvwrite /entity/$ID/PointLight/Radius 4.5" do "vvwrite /entity/$ID/PointLight/Energy 0.5" do "vvwrite /entity/$ID/PointLight/Softness 3"</code>
+      </td>
+    </tr>
+    <tr style="background-color: #2b2721;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>Fun</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Make everyone scream</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>> entities actor:controlled do "osay $ID Emote screams!"</code>
+      </td>
+    </tr>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>Debug</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Delete all space garbage</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>> entities with SpaceGarbage delete</code>
+      </td>
+    </tr>
+  </tbody>
+</table>

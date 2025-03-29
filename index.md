@@ -562,7 +562,7 @@ Toolshed commands must start with a `>` to work properly. The official (unfinish
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>with</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Lists entities with the specified component. Can be reversed by adding <code>not</code> as a prefix.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns entities with the specified component. Can be reversed by adding <code>not</code> as a prefix.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities with Pullable not with Puller comp:rm Pullable</code></td>
     </tr>
     <tr style="background-color: #233134;">
@@ -572,17 +572,17 @@ Toolshed commands must start with a `>` to work properly. The official (unfinish
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>nearby</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Lists entities within a range based on the provided target.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> self nearby 3</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns entities within a range based on the provided target.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> self nearby 3 comp:add Jittering</code></td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>prototyped</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Will return all entities using the specified prototype.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities prototyped MobHuman</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns all entities using the specified prototype.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities prototyped MobHuman polymorph WizardSpider</code></td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>actor:controlled</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Will return all entities that are currently controlled by a player.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns all entities that are currently controlled by a player.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities actor:controlled select 5</code></td>
     </tr>
     <tr style="background-color: #233134;">
@@ -599,6 +599,11 @@ Toolshed commands must start with a `>` to work properly. The official (unfinish
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>visualize</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Displays a window of all corresponding results.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities prototyped MobHuman visualize</code></td>
+    </tr>
+    <tr style="background-color: #2b2721;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>ent</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns the specified entity.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> ent 12345 replace MobCarpMagic</code></td>
     </tr>
   </tbody>
 </table>

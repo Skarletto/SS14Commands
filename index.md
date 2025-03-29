@@ -509,21 +509,21 @@ You will most likely need to alter the names of your prototype if you are testin
 # VV/Components Documentation
 
 #### Adding/Removing funds from the station's bank
-You can find the station's ID easily by typing `stations:list` in the console.
-After getting the station's ID, you can `vv 12345`, select the "StationBankAccount" component, and edit the Balance's value.
+You can find the station's ID easily by typing <code>stations:list</code> in the console.
+After getting the station's ID, you can <code>vv 12345</code>, select the "StationBankAccount" component, and edit the Balance's value.
 You can even make the station LOSE money actively by setting the increase to a negative number.
 
 
-***Mind-related Components***
-:   Some components are placed in the mind, rather than the entity. This allows you to change things such as antag status or custom objectives. Open the MindContainer component on a player's entity. The second string should say "Mind 1234567". Use the VV command with this to access components such as TraitorRole, InitialInfected, or RoleBriefing.
+#### Mind-related Components
+Some components are placed in the mind, rather than the entity. This allows you to change things such as antag status or custom objectives. <code>vv</code> a player's entity and open the MindContainer component. The second value named Mind should have an ID like 12345. <code>vv</code> that ID this to access the Mind's Mind component. This component contains the character's objectives, roles (job, traitor, etc.), role type (SoloAntag, etc.), and other information tied to it's parent entity (the character itself, name, time of death, etc.) This is also where you can prevent a mind from ghosting and suiciding.
 
 # Toolshed
-Toolshed is the newer alternative of BQL and was developed by Moony.
+Toolshed is the newer alternative to BQL and was developed by Moony.
 
-Toolshed commands must start with a `>` to work properly. The official (unfinished) toolshed documentation can be found [here](https://docs.spacestation14.com/en/robust-toolbox/toolshed.html?highlight=toolshed#toolshed), but it is not necessary to read, nor to learn. Most toolshed commands have autocomplete.
+Toolshed commands must start with a <code>></code> to work properly. The official (unfinished) toolshed documentation can be found [here](https://docs.spacestation14.com/en/robust-toolbox/toolshed.html?highlight=toolshed#toolshed), but it is not necessary to read, nor to learn. Most toolshed commands have autocomplete.
 ## The Basics
 <div style="background-color: #2b2020; color: #ba3b3b; padding: 10px; border-left: 4px solid #ba3b3b;">
-  Be extremely careful when using `entities` based Toolshed commands. It is *very* easy to kill the server or end a round. If you are unsure what the command will fully do, test run it in a dev environment or empty server.
+  Be extremely careful when using entity based Toolshed commands. It is *very* easy to kill the server or end a round. If you are unsure what your command will fully do, test run it in a dev environment or an empty server.
 </div><br>
 
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">

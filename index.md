@@ -588,7 +588,7 @@ Toolshed commands must start with a <code>></code> to work properly. The officia
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>self</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns your own entity ID.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> self do "addcomp $ID Jittering"</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> self comp:add Jittering</code></td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>do</strong></td>

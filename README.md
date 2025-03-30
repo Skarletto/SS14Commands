@@ -4,15 +4,13 @@
 All assets including images and code in the /prototypes folder and the /images folder are under a Creative Commons 3.0 BY-SA license unless otherwise indicated.
 
 ## Currently a work in progress. Things may not be complete yet. Bear with me.
+
+Last edit:
+Toolshed update/cleanup
 Current tasks:
-
+Script tutorial
 FIX THE SHITTY HTML/markddown OHHH MY GODH
-
 Add images to commands that would benefit it
-
-Write a proper guide to prototypes
-
-Add more toolshed documentation
 
 
 # Special thanks to everyone who helped.

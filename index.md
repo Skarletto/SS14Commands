@@ -603,7 +603,12 @@ Toolshed commands must start with a <code>></code> to work properly. The officia
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>ent</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns the specified entity.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> ent 12345 replace MobCarpMagic</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> ent 12345 do "damage Blunt 50 true $ID"</code></td>
+    </tr>
+    <tr style="background-color: #233134;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>replace</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Deletes the previous entity and places a new entity in it's place. Ghosts players if you use it on them.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> ent 12345 replace ToiletEmpty</code></td>
     </tr>
   </tbody>
 </table>

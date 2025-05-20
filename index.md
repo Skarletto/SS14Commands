@@ -635,7 +635,7 @@ Good if your server is experiencing gigalag
 `> entities with SpaceGarbage delete`
 
 # Scripting Tutorial
-Ever see those admins who spectate then immediately shorten or grow, get colored, and starts flying around real fast, all at the same time? We're learning how to script, baby. A script is literally just a series of commands that you tell the game to run. You can add as many as you want. There are multiple use cases for scripts, and amazing for automating tasks that don't require editing in-between uses.
+Ever see those admins who spectate then immediately shorten or grow, get colored, and starts flying around real fast, all at the same time? We're learning how to script, baby. A script is literally just a series of commands that you tell the game to run. You can add as many commands as you want. There are multiple use cases for scripts, and are amazing for automating tasks that don't require editing in-between uses.
 
 To get started, type <code>%appdata%</code> in your search bar and scroll down to find <code>Space Station 14</code>. In case you're already lost, the directory's location is <code>\AppData\Roaming\Space Station 14\data</code>. If you're not on windows, you'll have to find that folder yourself. Anyways, open the <code>data</code> folder, and create a text file (.txt). Literally any name works, but you'll be typing that name in the console, so make sure you can recognize it. You can make as many scripts as you want. Put your script in that file. Once you have every command you want in your script, run <code>exec</code> with the file name to run your script. <code>exec</code> has autocomplete.
 

@@ -635,13 +635,13 @@ Good if your server is experiencing gigalag
 `> entities with SpaceGarbage delete`
 
 # Scripting Tutorial
-Ever see those admins who spectate then immediately shorten or grow, get colored, and starts flying around real fast, all at the same time? We're learning how to script, baby. To get started, type <code>%appdata%</code> in your search bar and scroll down to find <code>Space Station 14</code>. In case you're already lost, the directory's location is <code>\AppData\Roaming\Space Station 14\data</code>. If you're not on windows, you'll have to find that folder yourself. Anyways, open the data folder, and create a text file. Literally any name works, but you'll be typing that name in the console, so make sure you can recognize the name. You can make as many scripts as you want. You'll have to run <code>exec</code> with the file name to run your script, and it has autocomplete.
+Ever see those admins who spectate then immediately shorten or grow, get colored, and starts flying around real fast, all at the same time? We're learning how to script, baby. A script is literally just a series of commands that you tell the game to run. You can add as many as you want. There are multiple use cases for scripts, and amazing for automating tasks that don't require editing in-between uses.
 
-Anyways, a script is literally just a series of commands that you tell the game to run. You can add as many as you want. There are multiple use cases for scripts, and amazing for automating tasks that don't require editing in-between uses.
+To get started, type <code>%appdata%</code> in your search bar and scroll down to find <code>Space Station 14</code>. In case you're already lost, the directory's location is <code>\AppData\Roaming\Space Station 14\data</code>. If you're not on windows, you'll have to find that folder yourself. Anyways, open the <code>data</code> folder, and create a text file (.txt). Literally any name works, but you'll be typing that name in the console, so make sure you can recognize it. You can make as many scripts as you want. Put your script in that file. Once you have every command you want in your script, run <code>exec</code> with the file name to run your script. <code>exec</code> has autocomplete.
 
 ### Basic aGhost Script
 This script relies on toolshed to fill in the entity's ID by running "self" first. Here's nikthechampiongr's "generic username agnostic script":
-<br>
+
 <code>> self not prototyped AdminObserver do "aghost"</code><br>
 <code>> self do "vvwrite entity/$ID/MovementSpeedModifier/BaseSprintSpeed 25"</code><br>
 <code>> self do "vvwrite entity/$ID/MovementSpeedModifier/BaseWalkSpeed 6"</code><br>
@@ -659,6 +659,7 @@ Here is a script by aquif that itemizes a marked entity (which you need to mark 
 <code>> marked comp:ensure Item</code><br>
 <code>> marked comp:ensure MultiHandedItem</code><br>
 <code>> marked comp:ensure CanEscapeInventory</code><br>
+
 For this script, you should be adding an entity size. This command changes based on what kind of inventory your server has:
 
 Size for list inventory servers: <code>> marked do "vvwrite /entity/$ID/Item/Size 120"</code><br>

@@ -617,26 +617,26 @@ Toolshed commands must start with a <code>></code> to work properly. The officia
 ### Adminning
 <strong>Find all player controlled observers</strong><br>
 
-So you don't have to fly around looking for ghosts
-`> entities actor:controlled with Ghost visualize`
+So you don't have to fly around looking for ghosts<br>
+<code>> entities actor:controlled with Ghost visualize</code>
 
 ### Fun
 <strong>Turn all MobGlockroach into ghost roles with custom text</strong><br>
 
-makeghostrole's syntax goes Role Name, Description and Rules
-`> entities prototyped MobGlockroach do "makeghostrole $ID GLOCKROACH \"ARRGGHHH\" \"BANG BANG POW\""`
+makeghostrole's syntax goes Role Name, Description and Rules<br>
+<code>> entities prototyped MobGlockroach do "makeghostrole $ID GLOCKROACH \"ARRGGHHH\" \"BANG BANG POW\""</code>
 
 ![image](https://github.com/user-attachments/assets/fa7a0cee-2908-4011-a6cd-a4696eea8cb6)
 
 <strong>Make everyone scream</strong><br>
 
-`> entities actor:controlled do "osay $ID Emote screams!"`
+<code>> entities actor:controlled do "osay $ID Emote screams!"</code>
 
 ### Debug
 <strong>Delete all space garbage</strong><br>
 
-Good if your server is experiencing gigalag
-`> entities with SpaceGarbage delete`
+Good if your server is experiencing gigalag<br>
+<code>> entities with SpaceGarbage delete</code>
 
 # Scripting Tutorial
 Ever see those admins who spectate then immediately shorten or grow, get colored, and starts flying around real fast, all at the same time? We're learning how to script, baby. A script is literally just a series of commands that you tell the game to run. You can add as many commands as you want. There are multiple use cases for scripts, and are amazing for automating tasks that don't require editing in-between uses.

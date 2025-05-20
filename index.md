@@ -496,17 +496,17 @@ For example, here's our stars' prototype:
 
 ![image](https://github.com/user-attachments/assets/64ca3125-783d-4038-86f0-e4e7955dfe0e)
 
-To make this prototype, I looked at how other similar items were formatted in \Prototypes\Entities\Clothing\Neck. Reason why this looks so empty is because I specified a parent. That means the prototype will inherit every single component from that parent, and anything specified in the child's file will override it's parent's. So by adding a sprite component to the child, we're overriding the parent's sprite. 
+To make this prototype, I looked at how other similar items were formatted in \Prototypes\Entities\Clothing\Neck. Reason why this looks so empty is because I specified a parent. That means the prototype will inherit every single component from that parent, and anything specified in the child's file will override it's parent's. So by adding a sprite component to the child, we're overriding the parent's sprite. Note: You CANNOT specify a component removal while making a prototype. If you need a component removed from the parent, copy the parent instead, and use that as your new base.
 
 You can trace back the origin of most prototypes to a singular parent. Everything is just mashed together and built atop one another- Which also means it's really easy to make your own prototypes. I also commented out the commands I need to run so I can easily paste them in the command line in-game.
 
-Now, all we need to do is upload all of the files and run the yml. This is also super simple: `uploadfile Skarlet/empstarsneck.rsi/equipped-MASK.png` . This will open a window, where you are able to select which file to upload. So, we upload `equipped-MASK.png`. In turn, this uploads to a new folder we create through the command, `empstarsneck.rsi`, which is inside of MY upload folder. The upload folder is named after your username, so if you ever plan on using these, make sure to edit my name out before uploading, otherwise it'll upload all of these in your upload folder, in a folder named Skarlet.
+Now, all we need to do is upload all of the files and run the yml. This is also super simple: <code>uploadfile Skarlet/empstarsneck.rsi/equipped-MASK.png</code> . This will open a window, where you are able to select which file to upload. So, we upload <code>equipped-MASK.png</code>. In turn, this uploads to a new folder we create through the command, <code>empstarsneck.rsi</code>, which is inside of MY upload folder. The upload folder is named after your username, so if you ever plan on using these, make sure to edit my name out before uploading, otherwise it'll upload all of these in your upload folder, in a folder named Skarlet.
 
-Once you upload all of your necessary files, you can finally run the yml. `loadprototype` will open a window that lets you select which file you wish to open. This will load the item and make it available to spawn, unless there is an error with the prototype. Most common errors in prototype making are empty spaces in unintended areas and typos. Make sure everything that is referenced in multiple areas and files are properly written.
+Once you upload all of your necessary files, you can finally run the yml. <code>loadprototype</code> will open a window that lets you select which file you wish to open. This will load the item and make it available to spawn, unless there is an error with the prototype. Most common errors in prototype making are empty spaces in unintended areas and typos. Make sure everything that is referenced in multiple areas and files are properly written.
 
 You will most likely need to alter the names of your prototype if you are testing things as you go, because the upload system is a little silly. Values in a YML can be edited and re-uploaded easily, but assets like images will need either a dev-environment restart or need you to rename them to produce a separate item.
 
-# VV/Components Documentation
+# VV/Components Common Uses
 
 #### Adding/Removing funds from the station's bank
 You can find the station's ID easily by typing <code>stations:list</code> in the console.
@@ -515,7 +515,7 @@ You can even make the station LOSE money actively by setting the increase to a n
 
 
 #### Mind-related Components
-Some components are placed in the mind, rather than the entity. This allows you to change things such as antag status or custom objectives. <code>vv</code> a player's entity and open the MindContainer component. The second value named Mind should have an ID like 12345. <code>vv</code> that ID this to access the Mind's Mind component. This component contains the character's objectives, roles (job, traitor, etc.), role type (SoloAntag, etc.), and other information tied to it's parent entity (the character itself, name, time of death, etc.) This is also where you can prevent a mind from ghosting and suiciding.
+Some components are placed in the mind, rather than the entity. This allows you to change things such as antag status or custom objectives. <code>vv</code> a player's entity and open the MindContainer component. The second value named Mind should have an ID like 12345. <code>vv</code> that ID like <code>vv 12345</code> to access the Mind's Mind component. This component contains the character's objectives, roles (job, traitor, etc.), role type (SoloAntag, etc.), and other information tied to it's parent entity (the character itself, name, time of death, etc.) This is also where you can prevent a mind from ghosting and suiciding.
 
 # Toolshed
 Toolshed is the newer alternative to BQL and was developed by Moony.
@@ -633,3 +633,34 @@ makeghostrole's syntax goes Role Name, Description and Rules
 #### Delete all space garbage
 Good if your server is experiencing gigalag
 `> entities with SpaceGarbage delete`
+
+# Scripting Tutorial
+Ever see those admins who spectate then immediately shorten or grow, get colored, and starts flying around real fast, all at the same time? We're learning how to script, baby. To get started, type <code>%appdata%</code> in your search bar and scroll down to find <code>Space Station 14</code>. In case you're already lost, the directory's location is <code>\AppData\Roaming\Space Station 14\data</code>. If you're not on windows, you'll have to find that folder yourself. Anyways, open the data folder, and create a text file. Literally any name works, but you'll be typing that name in the console, so make sure you can recognize the name. You can make as many scripts as you want. You'll have to run <code>exec</code> with the file name to run your script, and it has autocomplete.
+
+Anyways, a script is literally just a series of commands that you tell the game to run. You can add as many as you want. There are multiple use cases for scripts, and amazing for automating tasks that don't require editing in-between uses.
+
+### Basic aGhost Script
+This script relies on toolshed to fill in the entity's ID by running "self" first. Here's nikthechampiongr's "generic username agnostic script":
+<code>> self not prototyped AdminObserver do "aghost"
+> self do "vvwrite entity/$ID/MovementSpeedModifier/BaseSprintSpeed 25"
+> self do "vvwrite entity/$ID/MovementSpeedModifier/BaseWalkSpeed 6"
+> self do "vvwrite entity/$ID/Description \"GHOST GANG!\""
+> self do "vvwrite entity/$ID/Eye/VisibilityMask 7"
+> self do "vvwrite entity/$ID/Ghost/color '#4D7AFF'"
+> self do "addcomp $ID ShowCriminalRecordIcons"
+> self do "addcomp $ID ShowJobIcons"
+> self do "addcomp $ID ShowMindShieldIcons"
+> self do "addcomp $ID ShowSyndicateIcons"</code>
+
+### Entity Itemization
+Here is a script by aquif that itemizes a marked entity (which you need to mark by right-clicking an entity > admin > mark):
+<code>> marked comp:ensure Item
+> marked comp:ensure MultiHandedItem
+> marked comp:ensure CanEscapeInventory</code>
+For this script, you should be adding an entity size. This command changes based on what kind of inventory your server has:
+Size for list inventory servers: <code>> marked do "vvwrite /entity/$ID/Item/Size 120"</code>
+Size for grid inventory servers: <code>> marked do "vvwrite /entity/$ID/Item/Size Normal"</code> for a 2x2 tiled item, or use <code>Ginormous</code> to be too big for bags. Inspect the item component of other items for more sizes.
+
+### Make All Ghosts Rainbow
+This is a singular command, however making it into a script has us write a lot less words than writing the whole command (ex: <code>exec /RGBALL.txt</code>)
+<code>> entities with Ghost comp:ensure RgbLightController comp:ensure PointLight do "vvwrite /entity/$ID/PointLight/Energy 0"</code>

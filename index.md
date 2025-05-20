@@ -615,22 +615,26 @@ Toolshed commands must start with a <code>></code> to work properly. The officia
 
 ## Various Toolshed Strings
 ### Adminning
-<strong>Find all player controlled observers</strong>
+<strong>Find all player controlled observers</strong><br>
+
 So you don't have to fly around looking for ghosts
 `> entities actor:controlled with Ghost visualize`
 
 ### Fun
-<strong>Turn all MobGlockroach into ghost roles with custom text</strong>
+<strong>Turn all MobGlockroach into ghost roles with custom text</strong><br>
+
 makeghostrole's syntax goes Role Name, Description and Rules
 `> entities prototyped MobGlockroach do "makeghostrole $ID GLOCKROACH \"ARRGGHHH\" \"BANG BANG POW\""`
 
 ![image](https://github.com/user-attachments/assets/fa7a0cee-2908-4011-a6cd-a4696eea8cb6)
 
-<strong>Make everyone scream</strong>
+<strong>Make everyone scream</strong><br>
+
 `> entities actor:controlled do "osay $ID Emote screams!"`
 
 ### Debug
-<strong>Delete all space garbage</strong>
+<strong>Delete all space garbage</strong><br>
+
 Good if your server is experiencing gigalag
 `> entities with SpaceGarbage delete`
 

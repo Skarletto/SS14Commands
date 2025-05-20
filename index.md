@@ -641,26 +641,29 @@ Anyways, a script is literally just a series of commands that you tell the game 
 
 ### Basic aGhost Script
 This script relies on toolshed to fill in the entity's ID by running "self" first. Here's nikthechampiongr's "generic username agnostic script":
-<code>> self not prototyped AdminObserver do "aghost"
-> self do "vvwrite entity/$ID/MovementSpeedModifier/BaseSprintSpeed 25"
-> self do "vvwrite entity/$ID/MovementSpeedModifier/BaseWalkSpeed 6"
-> self do "vvwrite entity/$ID/Description \"GHOST GANG!\""
-> self do "vvwrite entity/$ID/Eye/VisibilityMask 7"
-> self do "vvwrite entity/$ID/Ghost/color '#4D7AFF'"
-> self do "addcomp $ID ShowCriminalRecordIcons"
-> self do "addcomp $ID ShowJobIcons"
-> self do "addcomp $ID ShowMindShieldIcons"
-> self do "addcomp $ID ShowSyndicateIcons"</code>
+
+<code>> self not prototyped AdminObserver do "aghost"</code>
+<code>> self do "vvwrite entity/$ID/MovementSpeedModifier/BaseSprintSpeed 25"</code>
+<code>> self do "vvwrite entity/$ID/MovementSpeedModifier/BaseWalkSpeed 6"</code>
+<code>> self do "vvwrite entity/$ID/Description \"GHOST GANG!\""</code>
+<code>> self do "vvwrite entity/$ID/Eye/VisibilityMask 7"</code>
+<code>> self do "vvwrite entity/$ID/Ghost/color '#4D7AFF'"</code>
+<code>> self do "addcomp $ID ShowCriminalRecordIcons"</code>
+<code>> self do "addcomp $ID ShowJobIcons"</code>
+<code>> self do "addcomp $ID ShowMindShieldIcons"</code>
+<code>> self do "addcomp $ID ShowSyndicateIcons"</code>
 
 ### Entity Itemization
 Here is a script by aquif that itemizes a marked entity (which you need to mark by right-clicking an entity > admin > mark):
-<code>> marked comp:ensure Item
-> marked comp:ensure MultiHandedItem
-> marked comp:ensure CanEscapeInventory</code>
+
+<code>> marked comp:ensure Item</code>
+<code>> marked comp:ensure MultiHandedItem</code>
+<code>> marked comp:ensure CanEscapeInventory</code></code>
 For this script, you should be adding an entity size. This command changes based on what kind of inventory your server has:
 Size for list inventory servers: <code>> marked do "vvwrite /entity/$ID/Item/Size 120"</code>
 Size for grid inventory servers: <code>> marked do "vvwrite /entity/$ID/Item/Size Normal"</code> for a 2x2 tiled item, or use <code>Ginormous</code> to be too big for bags. Inspect the item component of other items for more sizes.
 
 ### Make All Ghosts Rainbow
 This is a singular command, however making it into a script has us write a lot less words than writing the whole command (ex: <code>exec /RGBALL.txt</code>)
+
 <code>> entities with Ghost comp:ensure RgbLightController comp:ensure PointLight do "vvwrite /entity/$ID/PointLight/Energy 0"</code>

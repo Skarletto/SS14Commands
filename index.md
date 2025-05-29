@@ -41,6 +41,8 @@ Add images to commands that would benefit it
 * TOC
 {:toc}
 
+<hr class="my-1">
+
 # Classic/VV commands
 ## Simple commands
 ### Basics / Navigation
@@ -154,6 +156,7 @@ Add images to commands that would benefit it
   </tbody>
 </table>
 
+<hr class="my-1">
 
 ### General Adminning
 
@@ -246,7 +249,7 @@ Add images to commands that would benefit it
   </tbody>
 </table>
 
-<!-- -->
+<hr class="my-1">
 
 ### Debug
 
@@ -332,7 +335,7 @@ Add images to commands that would benefit it
   </tbody>
 </table>
 
-<!-- -->
+<hr class="my-1">
 
 ### Admin Abuse
 
@@ -439,6 +442,7 @@ Add images to commands that would benefit it
   </tbody>
 </table>
 
+<hr class="my-1">
 <br>
 
 ## Upload tutorial and commands
@@ -479,6 +483,8 @@ Add images to commands that would benefit it
   Be extremely careful when uploading prototypes. It is *very* easy to kill the server or end a round. If you are unsure whether your prototype works or if it is up to date, test run it in a dev environment or empty server first.
 </div><br>
 
+<hr class="my-1">
+
 ### Uploading a prototype with `uploadfile`
 <a href="https://github.com/Skarletto/SS14Commands/tree/main/prototypes/empstarsneck.rsi" target="_blank"><strong>The files used in this example can be found here!</strong></a>
 
@@ -506,6 +512,8 @@ Once you upload all of your necessary files, you can finally run the yml. <code>
 
 You will most likely need to alter the names of your prototype if you are testing things as you go, because the upload system is a little silly. Values in a YML can be edited and re-uploaded easily, but assets like images will need either a dev-environment restart or need you to rename them to produce a separate item.
 
+<hr class="my-1">
+
 # VV/Components Common Uses
 
 #### Adding/Removing funds from the station's bank
@@ -513,9 +521,12 @@ You can find the station's ID easily by typing <code>stations:list</code> in the
 After getting the station's ID, you can <code>vv 12345</code>, select the "StationBankAccount" component, and edit the Balance's value.
 You can even make the station LOSE money actively by setting the increase to a negative number.
 
+<hr class="my-1">
 
 #### Mind-related Components
 Some components are placed in the mind, rather than the entity. This allows you to change things such as antag status or custom objectives. <code>vv</code> a player's entity and open the MindContainer component. The second value named Mind should have an ID like 12345. <code>vv</code> that ID like <code>vv 12345</code> to access the Mind's Mind component. This component contains the character's objectives, roles (job, traitor, etc.), role type (SoloAntag, etc.), and other information tied to it's parent entity (the character itself, name, time of death, etc.) This is also where you can prevent a mind from ghosting and suiciding.
+
+<hr class="my-1">
 
 # Toolshed
 Toolshed is the newer alternative to BQL and was developed by Moony.
@@ -613,12 +624,16 @@ Toolshed commands must start with a <code>></code> to work properly. The officia
   </tbody>
 </table>
 
+<hr class="my-1">
+
 ## Various Toolshed Strings
 ### Adminning
 <strong>Find all player controlled observers</strong><br>
 
 So you don't have to fly around looking for ghosts<br>
 <code>> entities actor:controlled with Ghost visualize</code>
+
+<hr class="my-1">
 
 ### Fun
 <strong>Turn all specified prototyped entities into ghost roles with custom text</strong><br>
@@ -632,16 +647,22 @@ makeghostrole's syntax goes Role Name, Description and Rules<br>
 
 <code>> entities actor:controlled do "osay $ID Emote screams!"</code>
 
+<hr class="my-1">
+
 ### Debug
 <strong>Delete all space garbage</strong><br>
 
 Good if your server is experiencing gigalag<br>
 <code>> entities with SpaceGarbage delete</code>
 
+<hr class="my-1">
+
 # Scripting Tutorial
 Ever see those admins who spectate then immediately shorten or grow, get colored, and starts flying around real fast, all at the same time? We're learning how to script, baby. A script is literally just a series of commands that you tell the game to run. You can add as many commands as you want. There are multiple use cases for scripts, and are amazing for automating tasks that don't require editing in-between uses.
 
 To get started, type <code>%appdata%</code> in your search bar and scroll down to find <code>Space Station 14</code>. In case you're already lost, the directory's location is <code>\AppData\Roaming\Space Station 14\data</code>. If you're not on windows, you'll have to find that folder yourself. Anyways, open the <code>data</code> folder, and create a text file (.txt). Literally any name works, but you'll be typing that name in the console, so make sure you can recognize it. You can make as many scripts as you want. Put your script in that file. Once you have every command you want in your script, run <code>exec</code> with the <code>/filename</code> to run your script. <code>exec</code> has autocomplete.
+
+<hr class="my-1">
 
 ### Basic aGhost Script
 This script relies on toolshed to fill in the entity's ID by running "self" first. Here's nikthechampiongr's "generic username agnostic script":

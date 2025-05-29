@@ -41,8 +41,6 @@ Add images to commands that would benefit it
 * TOC
 {:toc}
 
-<hr class="my-1">
-
 # Classic/VV commands
 ## Simple commands
 ### Basics / Navigation
@@ -156,8 +154,6 @@ Add images to commands that would benefit it
   </tbody>
 </table>
 
-<hr class="my-1">
-
 ### General Adminning
 
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
@@ -249,8 +245,6 @@ Add images to commands that would benefit it
   </tbody>
 </table>
 
-<hr class="my-1">
-
 ### Debug
 
 <table style="width: 100%; border-collapse: collapse; margin: 20px 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; box-shadow: 0 2px 3px rgba(0,0,0,0.1);">
@@ -334,8 +328,6 @@ Add images to commands that would benefit it
 </tr>
   </tbody>
 </table>
-
-<hr class="my-1">
 
 ### Admin Abuse
 
@@ -442,7 +434,6 @@ Add images to commands that would benefit it
   </tbody>
 </table>
 
-<hr class="my-1">
 <br>
 
 ## Upload tutorial and commands
@@ -482,8 +473,6 @@ Add images to commands that would benefit it
 <div style="background-color: #2b2020; color: #ba3b3b; padding: 10px; border-left: 4px solid #ba3b3b;">
   Be extremely careful when uploading prototypes. It is *very* easy to kill the server or end a round. If you are unsure whether your prototype works or if it is up to date, test run it in a dev environment or empty server first.
 </div><br>
-
-<hr class="my-1">
 
 ### Uploading a prototype with `uploadfile`
 <a href="https://github.com/Skarletto/SS14Commands/tree/main/prototypes/empstarsneck.rsi" target="_blank"><strong>The files used in this example can be found here!</strong></a>
@@ -642,6 +631,8 @@ makeghostrole's syntax goes Role Name, Description and Rules<br>
 <code>> entities prototyped MobGlockroach do "makeghostrole $ID GLOCKROACH \"ARRGGHHH\" \"BANG BANG POW\""</code>
 
 ![image](https://github.com/user-attachments/assets/fa7a0cee-2908-4011-a6cd-a4696eea8cb6)
+
+<hr class="my-1">
 
 <strong>Make everyone scream</strong><br>
 

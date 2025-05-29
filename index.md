@@ -613,8 +613,6 @@ Toolshed commands must start with a <code>></code> to work properly. The officia
   </tbody>
 </table>
 
-<hr class="my-1">
-
 ## Various Toolshed Strings
 ### Adminning
 <strong>Find all player controlled observers</strong><br>

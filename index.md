@@ -540,77 +540,77 @@ Toolshed commands must start with a <code>></code> to work properly. The officia
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>explain</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Pair with a an argument or string to show you exactly what every argument does and how to use them.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> explain self nearby 3</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> <strong>explain</strong> self nearby 3</code></td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>entities</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a list of all entities. Should be used with a filter (like <code>with</code> or <code>prototyped</code>).</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities with HeadRevolutionary comp:rm Cuffable</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> <strong>entities</strong> with HeadRevolutionary comp:rm Cuffable</code></td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>select</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns N number from the input list. Randomized. Accepts %.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities actor:controlled select 50%</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities actor:controlled <strong>select</strong> 50%</code></td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>take</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns N entities off the top of the input list. Smallest entity ID first. Note that this doesn't give you the entity.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities prototyped Crowbar take 2</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities prototyped Crowbar <strong>take</strong> 2</code></td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>pick</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a single random item from the input list. It does not give you said item.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities prototyped Crowbar pick</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities prototyped Crowbar <strong>pick</strong></code></td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>with</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns entities with the specified component. Can be reversed by adding <code>not</code> as a prefix.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities with Pullable not with Puller comp:rm Pullable</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities <strong>with</strong> Pullable not with Puller comp:rm Pullable</code></td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>marked</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns the marked entity's ID. You can mark an entity by right-clicking them > Admin > Mark.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> marked do "osay $ID Emote screams!"</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> <strong>marked</strong> do "osay $ID Emote screams!"</code></td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>nearby</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns entities within a range based on the provided target.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> self nearby 3 comp:add Jittering</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> self <strong>nearby</strong> 3 comp:add Jittering</code></td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>prototyped</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns all entities using the specified prototype.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities prototyped MobHuman polymorph WizardSpider</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities <strong>prototyped</strong> MobHuman polymorph WizardSpider</code></td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>actor:controlled</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns all entities that are currently controlled by a player.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities actor:controlled select 5</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities <strong>actor:controlled</strong> select 5</code></td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>self</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns your own entity ID.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> self comp:add Jittering</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> <strong>self</strong> comp:add Jittering</code></td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>do</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Runs regular commands for each entity in the list provided. All commands must be wrapped in quotations and inner quotes must be escaped.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> marked do "makeghostrole $ID \"Centcom Agent\" \"You've come to inspect the Station.\" \"(Role rules go here)\""</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> marked <strong>do</strong> "makeghostrole $ID \"Centcom Agent\" \"You've come to inspect the Station.\" \"(Role rules go here)\""</code></td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>visualize</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Displays a window of all corresponding results.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities prototyped MobHuman visualize</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities prototyped MobHuman <strong>visualize</strong></code></td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>ent</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns the specified entity.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> ent 12345 do "damage Blunt 50 true $ID"</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> <strong>ent</strong> 12345 do "damage Blunt 50 true $ID"</code></td>
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>replace</strong></td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Deletes the previous entity and places a new entity in it's place. Ghosts players if you use it on them.</td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> ent 12345 replace ToiletEmpty</code></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> ent 12345 <strong>replace</strong> ToiletEmpty</code></td>
     </tr>
   </tbody>
 </table>

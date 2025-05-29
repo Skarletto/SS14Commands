@@ -483,7 +483,7 @@ Regular clothing items really only need an equipped sprite, an icon sprite, and 
 
 ![image](https://github.com/user-attachments/assets/856ba119-a281-4fc8-8933-314ab20db1d0)
 
-To have a properly formatted meta.json, you can just copy one from the game files. There's a lot of examples in there, and once you're familiar with how they work, you'll be able to write your own (to be fair using the existing ones is a QoL lol). <span class="hover-container">Here is how the meta.json file looks for this example.<img src="images/meta.png" alt="Image" class="hover-image"></span> If your sprite is animated, you will need delays to tell the game at what speed it needs to play each sprite. You can tweak every individual number to your liking, so feel free to mess around with that.
+To have a properly formatted meta.json, you can just copy one from the game files. There's a lot of examples in there, and once you're familiar with how they work, you'll be able to edit them to fit your needs more than a premade one would. <span class="hover-container">Here is how the meta.json file looks for this example.<img src="images/meta.png" alt="Image" class="hover-image"></span> If your sprite is animated, you will need delays to tell the game at what speed it needs to play each sprite. You can tweak every individual number to your liking, so feel free to mess around with that.
 
 Once that's all prepped up, we gotta move onto the code for the item. Yml is thankfully not very hard to work with- Every prototype upload can basically be copied off from an existing prototype and frankenstein'd into whatever you want it to be. The format is also super straight-forward, and I had zero coding knowledge when I started working with them. Just gotta get used to it. Anyways, a prototype is basically just a long list of components added to it that makes it into an item with properties.
 
@@ -497,7 +497,9 @@ You can trace back the origin of most prototypes to a singular parent. Everythin
 
 Now, all we need to do is upload all of the files and run the yml. This is also super simple: <code>uploadfile Skarlet/empstarsneck.rsi/equipped-MASK.png</code> . This will open a window, where you are able to select which file to upload. So, we upload <code>equipped-MASK.png</code>. In turn, this uploads to a new folder we create through the command, <code>empstarsneck.rsi</code>, which is inside of MY upload folder. The upload folder is named after your username, so if you ever plan on using these, make sure to edit my name out before uploading, otherwise it'll upload all of these in your upload folder, in a folder named Skarlet.
 
-Once you upload all of your necessary files, you can finally run the yml. <code>loadprototype</code> will open a window that lets you select which file you wish to open. This will load the item and make it available to spawn, unless there is an error with the prototype. Most common errors in prototype making are empty spaces in unintended areas and typos. Make sure everything that is referenced in multiple areas and files are properly written.
+Once you upload all of your necessary files, you can finally run the yml. <code>loadprototype</code> will open a window that lets you select which file you wish to open. This will load the item and make it available to spawn, unless there is an error with the prototype. Most common errors in prototype making are empty spaces in unintended areas and typos. Make sure to check out for those if you get upload errors. NOTE: You should test your prototypes in a local or empty server before bringing them to a live server. Running in local gives you the advantage of seeing the server console errors, which sometimes has more answers than the in-game console. 
+
+ANOTHER NOTE: For code simplicity, you should put all of your prototypes for a specific upload in the same file. By this I mean, if you are making a mob that needs multiple types of prototypes to work, you can place them all in the same file. Like uploading multiple entities (clothes) in the same .yml as it's soundCollection and emoteSounds protos.
 
 You will most likely need to alter the names of your prototype if you are testing things as you go, because the upload system is a little silly. Values in a YML can be edited and re-uploaded easily, but assets like images will need either a dev-environment restart or need you to rename them to produce a separate item.
 
@@ -557,7 +559,7 @@ Toolshed commands must start with a <code>></code> to work properly. The officia
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>pick</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a single random item from the input list.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a single random item from the input list. It does not give you said item.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><code>> entities prototyped Crowbar pick</code></td>
     </tr>
     <tr style="background-color: #2b2721;">

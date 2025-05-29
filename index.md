@@ -621,7 +621,7 @@ So you don't have to fly around looking for ghosts<br>
 <code>> entities actor:controlled with Ghost visualize</code>
 
 ### Fun
-<strong>Turn all MobGlockroach into ghost roles with custom text</strong><br>
+<strong>Turn all specified prototyped entities into ghost roles with custom text</strong><br>
 
 makeghostrole's syntax goes Role Name, Description and Rules<br>
 <code>> entities prototyped MobGlockroach do "makeghostrole $ID GLOCKROACH \"ARRGGHHH\" \"BANG BANG POW\""</code>
@@ -641,7 +641,7 @@ Good if your server is experiencing gigalag<br>
 # Scripting Tutorial
 Ever see those admins who spectate then immediately shorten or grow, get colored, and starts flying around real fast, all at the same time? We're learning how to script, baby. A script is literally just a series of commands that you tell the game to run. You can add as many commands as you want. There are multiple use cases for scripts, and are amazing for automating tasks that don't require editing in-between uses.
 
-To get started, type <code>%appdata%</code> in your search bar and scroll down to find <code>Space Station 14</code>. In case you're already lost, the directory's location is <code>\AppData\Roaming\Space Station 14\data</code>. If you're not on windows, you'll have to find that folder yourself. Anyways, open the <code>data</code> folder, and create a text file (.txt). Literally any name works, but you'll be typing that name in the console, so make sure you can recognize it. You can make as many scripts as you want. Put your script in that file. Once you have every command you want in your script, run <code>exec</code> with the file name to run your script. <code>exec</code> has autocomplete.
+To get started, type <code>%appdata%</code> in your search bar and scroll down to find <code>Space Station 14</code>. In case you're already lost, the directory's location is <code>\AppData\Roaming\Space Station 14\data</code>. If you're not on windows, you'll have to find that folder yourself. Anyways, open the <code>data</code> folder, and create a text file (.txt). Literally any name works, but you'll be typing that name in the console, so make sure you can recognize it. You can make as many scripts as you want. Put your script in that file. Once you have every command you want in your script, run <code>exec</code> with the <code>/filename</code> to run your script. <code>exec</code> has autocomplete.
 
 ### Basic aGhost Script
 This script relies on toolshed to fill in the entity's ID by running "self" first. Here's nikthechampiongr's "generic username agnostic script":
@@ -657,6 +657,8 @@ This script relies on toolshed to fill in the entity's ID by running "self" firs
 <code>> self do "addcomp $ID ShowMindShieldIcons"</code><br>
 <code>> self do "addcomp $ID ShowSyndicateIcons"</code>
 
+<hr class="my-1">
+
 ### Entity Itemization
 Here is a script by aquif that itemizes a marked entity (which you need to mark by right-clicking an entity > admin > mark):
 
@@ -668,6 +670,8 @@ For this script, you should be adding an entity size. This command changes based
 
 Size for list inventory servers: <code>> marked do "vvwrite /entity/$ID/Item/Size 120"</code><br>
 Size for grid inventory servers: <code>> marked do "vvwrite /entity/$ID/Item/Size Normal"</code> for a 2x2 tiled item, or use <code>Ginormous</code> to be too big for bags. Inspect the item component of other items for more sizes.
+
+<hr class="my-1">
 
 ### Make All Ghosts Rainbow
 This is a singular command, however making it into a script has us write a lot less words than writing the whole command (ex: <code>exec /RGBALL.txt</code>)

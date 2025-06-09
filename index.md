@@ -117,7 +117,7 @@ Add images to commands that would benefit it
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>customvote</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Creates a custom vote for all players, requires at least two choices. Always do this before running any important events.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Creates a custom vote for all players, requires at least two choices. Choices with spaces need to be in quotation marks " ".</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
         <code>customvote "Do fish fly?" Yes No "Sometimes, I dream about cheese" Maybe</code>
       </td>
@@ -215,9 +215,9 @@ Add images to commands that would benefit it
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>menuvis</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Used to see every entity you can find when right-clicking a tile.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Used to see every entity you can find when right-clicking a tile (Like someone's organs).</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
-        <code>menuvis all</code> to use <code>menuvis</code> to remove
+        <code>menuvis all</code> to enable <code>menuvis</code> to disable
       </td>
     </tr>
     <tr style="background-color: #233134;">

@@ -25,6 +25,6 @@ Thank you everyone for either helping me learn how to use admin tooling during t
 
 **Chief_Engineer, Repo, Kezu, Veritius, ilyamikcoder, RyanStrudfelt, Pancake, Whisper, ShadowCommander, CptJeanLuc, nikthechampiongr, luckyshotpictures**
 
-Thank you to every admin in the adminbus who contributed to the document through outside means like teaching other mins or sharing their own documents:
+Thank you to every admin in the adminbus who contributed to this updated document through outside means like teaching other mins or sharing their own documents:
 
-**Milon, mish, aquif, TsjipTsjip, Blitz, Simyon, Avalon, Cyanide/Icepick, and many more.**
+**Milon, mish, aquif, TsjipTsjip, Blitz, Simyon, Avalon, Cyanide/Icepick, Southbridge, aquif, and many more.**

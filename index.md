@@ -16,7 +16,7 @@
 </style>
 
 <div style="background-color: #252929; color: #3588b1; padding: 10px; border-left: 4px solid #3588b1;">
-  This document aims to bring both common and obscure commands to light for ease of use for admins and devs alike. <strong>Some of the examples used use arbitrary entity IDs as well as usernames for clarity.</strong> You should change these to fit your needs.
+  This document aims to bring both common and obscure commands to light for ease of use for admins and devs alike. <strong>Some of the examples used use arbitrary entity IDs as well as usernames for clarity.</strong> You should change these to fit your needs. Additionally, some commands may not be available on every server, due to permission differences or content differences.
 </div><br>
 <style>
   .timestamp {

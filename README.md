@@ -6,19 +6,6 @@ All code in the /prototypes folder is under the MIT license.
 
 ## Currently a work in progress. Things may not be complete yet. Bear with me.
 
-Last edit:
-
-Toolshed update/cleanup
-
-Current tasks:
-
-Script tutorial
-
-FIX THE SHITTY HTML/markddown OHHH MY GODH
-
-Add images to commands that would benefit it
-
-
 # Special thanks to everyone who helped.
 
 Thank you everyone for either helping me learn how to use admin tooling during the year that I was an admin on Wizden, or for contributing to the original document:

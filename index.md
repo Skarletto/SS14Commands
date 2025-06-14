@@ -241,6 +241,13 @@ Add images to commands that would benefit it
         <code>stealthmin</code>
       </td>
     </tr>
+    <tr style="background-color: #2b2721;">
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>set-motd</strong></td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Lets you set a message of the day. Users will see it in chat upon joining and upon setting it. You don't need quotation marks for this one!</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
+        <code>set-motd Whassup gang, event going on!</code>
+      </td>
+    </tr>
   </tbody>
 </table>
 

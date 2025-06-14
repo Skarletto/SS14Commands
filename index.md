@@ -54,7 +54,7 @@ Add images to commands that would benefit it
   <tbody>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>help, oldhelp</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a description of the following command and its usage.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a description of the given command and its usage.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
         <code>help adminwho</code>
       </td>
@@ -68,14 +68,14 @@ Add images to commands that would benefit it
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>adminwho</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a list of online admins, excluding deadminned admins.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Returns a list of online admins, excluding deadminned and stealthminned admins.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
         <code>adminwho</code>
       </td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>aghost</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Turn yourself into an admin ghost, or back again.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Turn yourself into an admin ghost.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
         <code>aghost</code>
       </td>
@@ -390,14 +390,14 @@ Add images to commands that would benefit it
     </tr>
     <tr style="background-color: #233134;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>setmind</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Puts the user’s soul into the ID (may require the entity to have a mind).</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Puts a player in the specified entity ID (may require the entity to have a mind).</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
         <code>setmind 1234567 Skarlet</code>
       </td>
     </tr>
     <tr style="background-color: #2b2721;">
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;"><strong>addhand</strong></td>
-      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Adds a hand to the entity. Requires the "Hands" component in the entity.</td>
+      <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">Adds a hand to the entity. Requires the "Hands" component in the entity. You can run this multiple times.</td>
       <td style="padding: 12px 15px; border-bottom: 1px solid #212121;">
         <code>addhand 1234567</code>
       </td>

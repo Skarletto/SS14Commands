@@ -519,6 +519,8 @@ You will most likely need to alter the names of your prototype if you are testin
 </div><br>
 Components are awesome, and there's so many hidden things you can do with them. From useful to just plain fun, there's a component for everything. If you want to apply an object's property to another object, you might wanna look at the former's components and apply the ones you want to the latter.
 
+<hr class="my-1">
+
 #### Adding/Removing funds from the station's bank
 You can find the station's ID easily by typing <code>stations:list</code> in the console. You can then <code>vvwrite /entity/12345/StationBankAccount/Accounts[Cargo] 9999</code> to set cargo's balance to 9999.
 

@@ -526,7 +526,7 @@ You can find the station's ID easily by typing <code>stations:list</code> in the
 
 If your server doesn't have departemental budget, you can just edit the Balance field in the StationBankAccount component
 
-You can also make the station actively lose money by setting the <code>IncreasePetSecond</code> to a negative number :trollface:
+You can also make the station actively lose money by setting the <code>IncreasePerSecond</code> to a negative number :trollface:
 
 <hr class="my-1">
 

@@ -476,11 +476,13 @@ Add images to commands that would benefit it
     </tr>
   </tbody>
 </table>
+
+
+### Uploading a prototype with `uploadfile`
 <div style="background-color: #2b2020; color: #ba3b3b; padding: 10px; border-left: 4px solid #ba3b3b;">
   Be extremely careful when uploading prototypes. It is *very* easy to kill the server or end a round. If you are unsure whether your prototype works or if it is up to date, test run it in a dev environment or empty server first.
 </div><br>
 
-### Uploading a prototype with `uploadfile`
 <a href="https://github.com/Skarletto/SS14Commands/tree/main/prototypes/empstarsneck.rsi" target="_blank"><strong>The files used in this example can be found here!</strong></a>
 
 Uploading singular files is very straightforward. Here is an example to show exactly how to use this command to upload a prototype. In this example, I will upload a custom neck item that displays stars on top of the character wearing it. First, we need to prepare our files.
@@ -512,16 +514,27 @@ You will most likely need to alter the names of your prototype if you are testin
 <hr class="my-1">
 
 # VV/Components Common Uses
+<div style="background-color: #2b2020; color: #ba3b3b; padding: 10px; border-left: 4px solid #ba3b3b;">
+  Beware, messing with some components will just straight up blow up the game, so only play with those you know are safe. Or don't, I'm not your dad.
+</div><br>
+Components are awesome, and there's so many hidden things you can do with them. From useful to just plain fun, there's a component for everything. If you want to apply an object's property to another object, you might wanna look at the former's components and apply the ones you want to the latter.
 
 #### Adding/Removing funds from the station's bank
-You can find the station's ID easily by typing <code>stations:list</code> in the console.
-After getting the station's ID, you can <code>vv 12345</code>, select the "StationBankAccount" component, and edit the Balance's value.
-You can even make the station LOSE money actively by setting the increase to a negative number.
+You can find the station's ID easily by typing <code>stations:list</code> in the console. You can then <code>vvwrite /entity/12345/StationBankAccount/Accounts[Cargo] 9999</code> to set cargo's balance to 9999.
+
+If your server doesn't have departemental budget, you can just edit the Balance field in the StationBankAccount component
+
+You can also make the station actively lose money by setting the <code>IncreasePetSecond</code> to a negative number :trollface:
 
 <hr class="my-1">
 
 #### Mind-related Components
 Some components are placed in the mind, rather than the entity. This allows you to change things such as antag status or custom objectives. <code>vv</code> a player's entity and open the MindContainer component. The second value named Mind should have an ID like 12345. <code>vv</code> that ID like <code>vv 12345</code> to access the Mind's Mind component. This component contains the character's objectives, roles (job, traitor, etc.), role type (SoloAntag, etc.), and other information tied to it's parent entity (the character itself, name, time of death, etc.) This is also where you can prevent a mind from ghosting and suiciding.
+
+<hr class="my-1">
+
+#### Marker Components
+With the <code>MarkerOne</code>, <code>MarkerTwo</code> and <code>MarkerThree</code> components, you can easily keep track of a player (OR MULTIPLE !) to apply things to them easily with Toolshed. <code>> entities with MarkerOne</code> is a very good way to synchronize VVediting. You can even apply it quickly by using <code>> marked comp:add MarkerOne</code>, and remove it the same way by using <code>> marked comp:rm MarkerOne</code>. How splendid.
 
 <hr class="my-1">
 

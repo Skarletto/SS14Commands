@@ -30,7 +30,7 @@
 </style>
 <div class="timestamp">Last updated: May 29th, 2025<br>
 Last edit:<br>
-Readability update<br>
+marker comps and station bank update<br>
 Current tasks:<br>
 FIX THE SHITTY HTML/markddown OHHH MY GODH<br>
 Add images to commands that would benefit it
